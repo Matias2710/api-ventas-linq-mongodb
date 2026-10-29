@@ -1,0 +1,1764 @@
+{
+  "solicitudes": [
+    {
+      "codigo": 200,
+      "ruta": "/health/live",
+      "respuesta": {
+        "estado": "Activo"
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/health/ready",
+      "respuesta": {
+        "estado": "Disponible",
+        "origen": "MongoDB local (prueba; no Atlas)"
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/ventas",
+      "respuesta": {
+        "datos": {
+          "ventas": [
+            {
+              "id": "DEMO-V001",
+              "fecha": "2026-07-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 936000,
+              "descuentoTotal": 45000,
+              "ingresoNeto": 891000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 115830.0,
+              "total": 1006830.0,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San José",
+                "provincia": "San José",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 900000,
+                  "descuento": 45000,
+                  "ingresoNeto": 855000
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 36000,
+                  "descuento": 0,
+                  "ingresoNeto": 36000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V002",
+              "fecha": "2026-07-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 214000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27820.0,
+              "total": 241820.0,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 2,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 190000,
+                  "descuento": 0,
+                  "ingresoNeto": 190000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V003",
+              "fecha": "2026-07-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 351000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 336750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 43777.5,
+              "total": 380527.5,
+              "canal": "Teléfono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sofía",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 66000,
+                  "descuento": 0,
+                  "ingresoNeto": 66000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V004",
+              "fecha": "2026-07-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 162000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 162000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 21060.0,
+              "total": 183060.0,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 4,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 140000,
+                  "descuento": 0,
+                  "ingresoNeto": 140000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V005",
+              "fecha": "2026-07-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 118000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 114500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 14885.0,
+              "total": 129385.0,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 1,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 48000,
+                  "descuento": 0,
+                  "ingresoNeto": 48000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V006",
+              "fecha": "2026-07-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.0,
+              "total": 1179720.0,
+              "canal": "Teléfono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Limón",
+                "provincia": "Limón",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V007",
+              "fecha": "2026-08-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 486000,
+              "descuentoTotal": 22500,
+              "ingresoNeto": 463500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 60255.0,
+              "total": 523755.0,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 1,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 450000,
+                  "descuento": 22500,
+                  "ingresoNeto": 427500
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 36000,
+                  "descuento": 0,
+                  "ingresoNeto": 36000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V008",
+              "fecha": "2026-08-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 404000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 404000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 52520.0,
+              "total": 456520.0,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sofía",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 4,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 380000,
+                  "descuento": 0,
+                  "ingresoNeto": 380000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V009",
+              "fecha": "2026-08-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 307000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 292750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 38057.5,
+              "total": 330807.5,
+              "canal": "Teléfono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V010",
+              "fecha": "2026-08-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 92000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 92000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 11960.0,
+              "total": 103960.0,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 70000,
+                  "descuento": 0,
+                  "ingresoNeto": 70000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V011",
+              "fecha": "2026-08-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 210500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27365.0,
+              "total": 237865.0,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Limón",
+                "provincia": "Limón",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V012",
+              "fecha": "2026-08-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1944000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1944000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 252720.0,
+              "total": 2196720.0,
+              "canal": "Teléfono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San José",
+                "provincia": "San José",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 4,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 1800000,
+                  "descuento": 0,
+                  "ingresoNeto": 1800000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V013",
+              "fecha": "2026-09-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 462000,
+              "descuentoTotal": 22500,
+              "ingresoNeto": 439500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 57135.0,
+              "total": 496635.0,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sofía",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 1,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 450000,
+                  "descuento": 22500,
+                  "ingresoNeto": 427500
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 12000,
+                  "descuento": 0,
+                  "ingresoNeto": 12000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V014",
+              "fecha": "2026-09-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 214000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27820.0,
+              "total": 241820.0,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 2,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 190000,
+                  "descuento": 0,
+                  "ingresoNeto": 190000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V015",
+              "fecha": "2026-09-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 351000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 336750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 43777.5,
+              "total": 380527.5,
+              "canal": "Teléfono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computación",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 66000,
+                  "descuento": 0,
+                  "ingresoNeto": 66000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V016",
+              "fecha": "2026-09-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 162000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 162000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 21060.0,
+              "total": 183060.0,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Limón",
+                "provincia": "Limón",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 4,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 140000,
+                  "descuento": 0,
+                  "ingresoNeto": 140000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V017",
+              "fecha": "2026-09-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 118000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 114500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 14885.0,
+              "total": 129385.0,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San José",
+                "provincia": "San José",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 1,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 48000,
+                  "descuento": 0,
+                  "ingresoNeto": 48000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V018",
+              "fecha": "2026-09-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.0,
+              "total": 1179720.0,
+              "canal": "Teléfono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computación",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            }
+          ],
+          "pagina": 1,
+          "tamano": 20,
+          "total": 18
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas según filtros; incluye estados no completados",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/ventas/DEMO-V001",
+      "respuesta": {
+        "datos": {
+          "id": "DEMO-V001",
+          "fecha": "2026-07-02T12:00:00Z",
+          "estado": "Completada",
+          "metodoPago": "Tarjeta",
+          "moneda": "CRC",
+          "subtotal": 936000,
+          "descuentoTotal": 45000,
+          "ingresoNeto": 891000,
+          "tasaImpuesto": 0.13,
+          "impuesto": 115830.0,
+          "total": 1006830.0,
+          "canal": "Tienda",
+          "tienePromocion": true,
+          "cliente": {
+            "identificacion": "DEMO-C01",
+            "nombre": "Cliente ficticio Ana",
+            "ciudad": "San José",
+            "provincia": "San José",
+            "categoria": "Frecuente"
+          },
+          "vendedor": {
+            "identificacion": "DEMO-E01",
+            "nombre": "Vendedora ficticia Alba",
+            "sucursal": "Central",
+            "region": "Valle Central"
+          },
+          "productos": [
+            {
+              "productoId": "P01",
+              "nombre": "Laptop",
+              "categoria": "Computación",
+              "cantidad": 2,
+              "precioUnitario": 450000,
+              "porcentajeDescuento": 5,
+              "subtotal": 900000,
+              "descuento": 45000,
+              "ingresoNeto": 855000
+            },
+            {
+              "productoId": "P02",
+              "nombre": "Mouse",
+              "categoria": "Accesorios",
+              "cantidad": 3,
+              "precioUnitario": 12000,
+              "porcentajeDescuento": 0,
+              "subtotal": 36000,
+              "descuento": 0,
+              "ingresoNeto": 36000
+            }
+          ]
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Transacción individual",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/resumen",
+      "respuesta": {
+        "datos": {
+          "ventas": 12,
+          "facturacion": 4529322.5,
+          "ingresosNetos": 4008250,
+          "impuestos": 521072.5,
+          "ticketPromedio": 377443.54
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/estados",
+      "respuesta": {
+        "datos": [
+          {
+            "estado": "Cancelada",
+            "ventas": 3
+          },
+          {
+            "estado": "Completada",
+            "ventas": 12
+          },
+          {
+            "estado": "Pendiente",
+            "ventas": 3
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Todos los estados, salvo filtro Estado",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/productos",
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P03",
+            "nombre": "Monitor",
+            "categoria": "Computación",
+            "unidades": 17,
+            "ingresosNetos": 1572250
+          },
+          {
+            "productoId": "P02",
+            "nombre": "Mouse",
+            "categoria": "Accesorios",
+            "unidades": 13,
+            "ingresosNetos": 156000
+          },
+          {
+            "productoId": "P04",
+            "nombre": "Teclado",
+            "categoria": "Accesorios",
+            "unidades": 10,
+            "ingresosNetos": 220000
+          },
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          },
+          {
+            "productoId": "P01",
+            "nombre": "Laptop",
+            "categoria": "Computación",
+            "unidades": 4,
+            "ingresosNetos": 1710000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Líneas completadas; categoría restringe líneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/productos?ordenarPor=ingresos",
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P01",
+            "nombre": "Laptop",
+            "categoria": "Computación",
+            "unidades": 4,
+            "ingresosNetos": 1710000
+          },
+          {
+            "productoId": "P03",
+            "nombre": "Monitor",
+            "categoria": "Computación",
+            "unidades": 17,
+            "ingresosNetos": 1572250
+          },
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          },
+          {
+            "productoId": "P04",
+            "nombre": "Teclado",
+            "categoria": "Accesorios",
+            "unidades": 10,
+            "ingresosNetos": 220000
+          },
+          {
+            "productoId": "P02",
+            "nombre": "Mouse",
+            "categoria": "Accesorios",
+            "unidades": 13,
+            "ingresosNetos": 156000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Líneas completadas; categoría restringe líneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/categorias",
+      "respuesta": {
+        "datos": [
+          {
+            "categoria": "Computación",
+            "unidades": 21,
+            "ingresosNetos": 3282250
+          },
+          {
+            "categoria": "Accesorios",
+            "unidades": 23,
+            "ingresosNetos": 376000
+          },
+          {
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Líneas completadas; categoría restringe líneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/clientes",
+      "respuesta": {
+        "datos": [
+          {
+            "id": "DEMO-C03",
+            "nombre": "Cliente ficticio Sofía",
+            "ventas": 3,
+            "facturacion": 1333682.5,
+            "ingresosNetos": 1180250
+          },
+          {
+            "id": "DEMO-C01",
+            "nombre": "Cliente ficticio Ana",
+            "ventas": 1,
+            "facturacion": 1006830.0,
+            "ingresosNetos": 891000
+          },
+          {
+            "id": "DEMO-C02",
+            "nombre": "Cliente ficticio Luis",
+            "ventas": 2,
+            "facturacion": 765575.0,
+            "ingresosNetos": 677500
+          },
+          {
+            "id": "DEMO-C04",
+            "nombre": "Cliente ficticio Diego",
+            "ventas": 3,
+            "facturacion": 755687.5,
+            "ingresosNetos": 668750
+          },
+          {
+            "id": "DEMO-C05",
+            "nombre": "Cliente ficticio Elena",
+            "ventas": 2,
+            "facturacion": 484487.5,
+            "ingresosNetos": 428750
+          },
+          {
+            "id": "DEMO-C06",
+            "nombre": "Cliente ficticio Pablo",
+            "ventas": 1,
+            "facturacion": 183060.0,
+            "ingresosNetos": 162000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/ciudades",
+      "respuesta": {
+        "datos": [
+          {
+            "id": "Cartago",
+            "nombre": "Cartago",
+            "ventas": 3,
+            "facturacion": 1333682.5,
+            "ingresosNetos": 1180250
+          },
+          {
+            "id": "San José",
+            "nombre": "San José",
+            "ventas": 1,
+            "facturacion": 1006830.0,
+            "ingresosNetos": 891000
+          },
+          {
+            "id": "Alajuela",
+            "nombre": "Alajuela",
+            "ventas": 2,
+            "facturacion": 765575.0,
+            "ingresosNetos": 677500
+          },
+          {
+            "id": "Heredia",
+            "nombre": "Heredia",
+            "ventas": 3,
+            "facturacion": 755687.5,
+            "ingresosNetos": 668750
+          },
+          {
+            "id": "Liberia",
+            "nombre": "Liberia",
+            "ventas": 2,
+            "facturacion": 484487.5,
+            "ingresosNetos": 428750
+          },
+          {
+            "id": "Limón",
+            "nombre": "Limón",
+            "ventas": 1,
+            "facturacion": 183060.0,
+            "ingresosNetos": 162000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/vendedores",
+      "respuesta": {
+        "datos": [
+          {
+            "id": "DEMO-E01",
+            "nombre": "Vendedora ficticia Alba",
+            "ventas": 6,
+            "facturacion": 2497300.0,
+            "ingresosNetos": 2210000
+          },
+          {
+            "id": "DEMO-E03",
+            "nombre": "Vendedora ficticia Celia",
+            "ventas": 3,
+            "facturacion": 1091862.5,
+            "ingresosNetos": 966250
+          },
+          {
+            "id": "DEMO-E02",
+            "nombre": "Vendedor ficticio Bruno",
+            "ventas": 3,
+            "facturacion": 940160.0,
+            "ingresosNetos": 832000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/canales",
+      "respuesta": {
+        "datos": [
+          {
+            "id": "Tienda",
+            "nombre": "Tienda",
+            "ventas": 6,
+            "facturacion": 2497300.0,
+            "ingresosNetos": 2210000
+          },
+          {
+            "id": "Teléfono",
+            "nombre": "Teléfono",
+            "ventas": 3,
+            "facturacion": 1091862.5,
+            "ingresosNetos": 966250
+          },
+          {
+            "id": "Web",
+            "nombre": "Web",
+            "ventas": 3,
+            "facturacion": 940160.0,
+            "ingresosNetos": 832000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/tendencias",
+      "respuesta": {
+        "datos": [
+          {
+            "anio": 2026,
+            "mes": 7,
+            "ventas": 4,
+            "facturacion": 1812237.5,
+            "ingresosNetos": 1603750
+          },
+          {
+            "anio": 2026,
+            "mes": 8,
+            "ventas": 4,
+            "facturacion": 1415042.5,
+            "ingresosNetos": 1252250
+          },
+          {
+            "anio": 2026,
+            "mes": 9,
+            "ventas": 4,
+            "facturacion": 1302042.5,
+            "ingresosNetos": 1152250
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/extremos",
+      "respuesta": {
+        "datos": {
+          "mayor": 1006830.0,
+          "menor": 103960.0
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/ciudades-distintas",
+      "respuesta": {
+        "datos": [
+          "Alajuela",
+          "Cartago",
+          "Heredia",
+          "Liberia",
+          "Limón",
+          "San José"
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/resumen?Desde=2026-07-02&Hasta=2026-07-02",
+      "respuesta": {
+        "datos": {
+          "ventas": 1,
+          "facturacion": 1006830.0,
+          "ingresosNetos": 891000,
+          "impuestos": 115830.0,
+          "ticketPromedio": 1006830.0
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 200,
+      "ruta": "/api/reportes/resumen?Ciudad=Inexistente",
+      "respuesta": {
+        "datos": {
+          "ventas": 0,
+          "facturacion": 0,
+          "ingresosNetos": 0,
+          "impuestos": 0,
+          "ticketPromedio": 0
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categoría selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "codigo": 404,
+      "ruta": "/api/ventas/no-existe",
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+        "title": "Venta no encontrada",
+        "status": 404
+      }
+    },
+    {
+      "codigo": 400,
+      "ruta": "/api/reportes/resumen?Desde=mal",
+      "respuesta": [
+        123,
+        34,
+        116,
+        121,
+        112,
+        101,
+        34,
+        58,
+        34,
+        104,
+        116,
+        116,
+        112,
+        115,
+        58,
+        47,
+        47,
+        116,
+        111,
+        111,
+        108,
+        115,
+        46,
+        105,
+        101,
+        116,
+        102,
+        46,
+        111,
+        114,
+        103,
+        47,
+        104,
+        116,
+        109,
+        108,
+        47,
+        114,
+        102,
+        99,
+        57,
+        49,
+        49,
+        48,
+        35,
+        115,
+        101,
+        99,
+        116,
+        105,
+        111,
+        110,
+        45,
+        49,
+        53,
+        46,
+        53,
+        46,
+        49,
+        34,
+        44,
+        34,
+        116,
+        105,
+        116,
+        108,
+        101,
+        34,
+        58,
+        34,
+        83,
+        111,
+        108,
+        105,
+        99,
+        105,
+        116,
+        117,
+        100,
+        32,
+        105,
+        110,
+        118,
+        195,
+        161,
+        108,
+        105,
+        100,
+        97,
+        34,
+        44,
+        34,
+        115,
+        116,
+        97,
+        116,
+        117,
+        115,
+        34,
+        58,
+        52,
+        48,
+        48,
+        44,
+        34,
+        100,
+        101,
+        116,
+        97,
+        105,
+        108,
+        34,
+        58,
+        34,
+        76,
+        97,
+        115,
+        32,
+        102,
+        101,
+        99,
+        104,
+        97,
+        115,
+        32,
+        100,
+        101,
+        98,
+        101,
+        110,
+        32,
+        117,
+        115,
+        97,
+        114,
+        32,
+        121,
+        121,
+        121,
+        121,
+        45,
+        77,
+        77,
+        45,
+        100,
+        100,
+        32,
+        121,
+        32,
+        117,
+        110,
+        32,
+        97,
+        195,
+        177,
+        111,
+        32,
+        101,
+        110,
+        116,
+        114,
+        101,
+        32,
+        48,
+        48,
+        48,
+        49,
+        32,
+        121,
+        32,
+        57,
+        57,
+        57,
+        56,
+        46,
+        34,
+        44,
+        34,
+        116,
+        114,
+        97,
+        99,
+        101,
+        73,
+        100,
+        34,
+        58,
+        34,
+        48,
+        48,
+        45,
+        49,
+        48,
+        97,
+        100,
+        98,
+        56,
+        54,
+        54,
+        51,
+        52,
+        50,
+        99,
+        52,
+        99,
+        50,
+        102,
+        52,
+        56,
+        48,
+        55,
+        54,
+        101,
+        99,
+        48,
+        57,
+        51,
+        100,
+        57,
+        57,
+        100,
+        57,
+        55,
+        45,
+        100,
+        97,
+        97,
+        48,
+        50,
+        50,
+        99,
+        53,
+        98,
+        56,
+        54,
+        52,
+        48,
+        97,
+        56,
+        50,
+        45,
+        48,
+        48,
+        34,
+        125
+      ]
+    }
+  ],
+  "ejecutadoUtc": "2026-10-29T03:35:13.5577948Z",
+  "baseUrl": "http://127.0.0.1:5088",
+  "correctas": 20
+}

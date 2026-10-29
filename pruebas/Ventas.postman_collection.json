@@ -1,0 +1,700 @@
+{
+  "info": {
+    "name": "Ventas Minimal API - datos ficticios",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Importar, establecer baseUrl y ejecutar. No contiene credenciales. Las comprobaciones numéricas presuponen los 18 documentos demo."
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:5088",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "/health/live",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health/live"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/health/ready",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health/ready"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas/DEMO-V001",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas/DEMO-V001"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas?Pagina=2&Tamano=5",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas?Pagina=2&Tamano=5"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });",
+              "pm.test('Totales demo CRC', () => { pm.expect(body.datos.ventas).to.eql(12); pm.expect(body.datos.facturacion).to.eql(4529322.5); pm.expect(body.datos.ingresosNetos).to.eql(4008250); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/estados",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/estados"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/productos",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/productos"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/productos?ordenarPor=ingresos",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/productos?ordenarPor=ingresos"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/categorias",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/categorias"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/clientes",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/clientes"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/ciudades",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/ciudades"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/vendedores",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/vendedores"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/canales",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/canales"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/tendencias",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/tendencias"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/extremos",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/extremos"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/ciudades-distintas",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/ciudades-distintas"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Desde=2026-07-02&Hasta=2026-07-02",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Desde=2026-07-02&Hasta=2026-07-02"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Ciudad=San%20Jos%C3%A9",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Ciudad=San%20Jos%C3%A9"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/productos?Categoria=Audio",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/productos?Categoria=Audio"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Moneda=USD",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Moneda=USD"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas?Estado=Cancelada",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas?Estado=Cancelada"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Ciudad=Inexistente",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Ciudad=Inexistente"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/productos?Desde=2020-01-01&Hasta=2020-01-31",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/productos?Desde=2020-01-01&Hasta=2020-01-31"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/extremos?Ciudad=Inexistente",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/extremos?Ciudad=Inexistente"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas/no-existe",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas/no-existe"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', () => pm.response.to.have.status(404));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Desde=mal",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Desde=mal"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Desde=2026-09-01&Hasta=2026-08-01",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Desde=2026-09-01&Hasta=2026-08-01"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Estado=Cancelada",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Estado=Cancelada"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/resumen?Moneda=EUR",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/resumen?Moneda=EUR"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/productos?ordenarPor=rentabilidad",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/productos?ordenarPor=rentabilidad"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas?Tamano=101",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas?Tamano=101"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/ventas?Pagina=0",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/ventas?Pagina=0"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', () => pm.response.to.have.status(400));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

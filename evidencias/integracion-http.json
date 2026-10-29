@@ -1,0 +1,4125 @@
+{
+  "ejecutadoUtc": "2026-10-29T03:32:58.1047741Z",
+  "origen": "MongoDB local (prueba; no Atlas)",
+  "carga": {
+    "primera": 18,
+    "segunda": 0
+  },
+  "resultado": "Todas las aserciones anteriores aprobadas",
+  "solicitudes": [
+    {
+      "ruta": "/health/live",
+      "codigo": 200,
+      "respuesta": {
+        "estado": "Activo"
+      }
+    },
+    {
+      "ruta": "/health/ready",
+      "codigo": 200,
+      "respuesta": {
+        "estado": "Disponible",
+        "origen": "MongoDB local (prueba; no Atlas)"
+      }
+    },
+    {
+      "ruta": "/api/ventas",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": [
+            {
+              "id": "DEMO-V001",
+              "fecha": "2026-07-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 936000,
+              "descuentoTotal": 45000,
+              "ingresoNeto": 891000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 115830.00,
+              "total": 1006830.00,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San Jos\u00E9",
+                "provincia": "San Jos\u00E9",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 900000,
+                  "descuento": 45000,
+                  "ingresoNeto": 855000
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 36000,
+                  "descuento": 0,
+                  "ingresoNeto": 36000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V002",
+              "fecha": "2026-07-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 214000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27820.00,
+              "total": 241820.00,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 190000,
+                  "descuento": 0,
+                  "ingresoNeto": 190000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V003",
+              "fecha": "2026-07-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 351000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 336750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 43777.50,
+              "total": 380527.50,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sof\u00EDa",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 66000,
+                  "descuento": 0,
+                  "ingresoNeto": 66000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V004",
+              "fecha": "2026-07-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 162000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 162000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 21060.00,
+              "total": 183060.00,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 4,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 140000,
+                  "descuento": 0,
+                  "ingresoNeto": 140000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V005",
+              "fecha": "2026-07-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 118000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 114500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 14885.00,
+              "total": 129385.00,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 1,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 48000,
+                  "descuento": 0,
+                  "ingresoNeto": 48000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V006",
+              "fecha": "2026-07-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.00,
+              "total": 1179720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Lim\u00F3n",
+                "provincia": "Lim\u00F3n",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V007",
+              "fecha": "2026-08-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 486000,
+              "descuentoTotal": 22500,
+              "ingresoNeto": 463500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 60255.00,
+              "total": 523755.00,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 1,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 450000,
+                  "descuento": 22500,
+                  "ingresoNeto": 427500
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 36000,
+                  "descuento": 0,
+                  "ingresoNeto": 36000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V008",
+              "fecha": "2026-08-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 404000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 404000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 52520.00,
+              "total": 456520.00,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sof\u00EDa",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 4,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 380000,
+                  "descuento": 0,
+                  "ingresoNeto": 380000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V009",
+              "fecha": "2026-08-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 307000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 292750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 38057.50,
+              "total": 330807.50,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V010",
+              "fecha": "2026-08-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 92000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 92000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 11960.00,
+              "total": 103960.00,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 70000,
+                  "descuento": 0,
+                  "ingresoNeto": 70000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V011",
+              "fecha": "2026-08-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 210500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27365.00,
+              "total": 237865.00,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Lim\u00F3n",
+                "provincia": "Lim\u00F3n",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V012",
+              "fecha": "2026-08-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1944000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1944000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 252720.00,
+              "total": 2196720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San Jos\u00E9",
+                "provincia": "San Jos\u00E9",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 4,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 1800000,
+                  "descuento": 0,
+                  "ingresoNeto": 1800000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V013",
+              "fecha": "2026-09-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 462000,
+              "descuentoTotal": 22500,
+              "ingresoNeto": 439500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 57135.00,
+              "total": 496635.00,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sof\u00EDa",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 1,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 450000,
+                  "descuento": 22500,
+                  "ingresoNeto": 427500
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 12000,
+                  "descuento": 0,
+                  "ingresoNeto": 12000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V014",
+              "fecha": "2026-09-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 214000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 214000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 27820.00,
+              "total": 241820.00,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 190000,
+                  "descuento": 0,
+                  "ingresoNeto": 190000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V015",
+              "fecha": "2026-09-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 351000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 336750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 43777.50,
+              "total": 380527.50,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 66000,
+                  "descuento": 0,
+                  "ingresoNeto": 66000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V016",
+              "fecha": "2026-09-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 162000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 162000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 21060.00,
+              "total": 183060.00,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Lim\u00F3n",
+                "provincia": "Lim\u00F3n",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 4,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 140000,
+                  "descuento": 0,
+                  "ingresoNeto": 140000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V017",
+              "fecha": "2026-09-18T12:00:00Z",
+              "estado": "Pendiente",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 118000,
+              "descuentoTotal": 3500,
+              "ingresoNeto": 114500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 14885.00,
+              "total": 129385.00,
+              "canal": "Web",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San Jos\u00E9",
+                "provincia": "San Jos\u00E9",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 70000,
+                  "descuento": 3500,
+                  "ingresoNeto": 66500
+                },
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 1,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 48000,
+                  "descuento": 0,
+                  "ingresoNeto": 48000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V018",
+              "fecha": "2026-09-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.00,
+              "total": 1179720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            }
+          ],
+          "pagina": 1,
+          "tamano": 20,
+          "total": 18
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas seg\u00FAn filtros; incluye estados no completados",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/ventas/DEMO-V001",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "id": "DEMO-V001",
+          "fecha": "2026-07-02T12:00:00Z",
+          "estado": "Completada",
+          "metodoPago": "Tarjeta",
+          "moneda": "CRC",
+          "subtotal": 936000,
+          "descuentoTotal": 45000,
+          "ingresoNeto": 891000,
+          "tasaImpuesto": 0.13,
+          "impuesto": 115830.00,
+          "total": 1006830.00,
+          "canal": "Tienda",
+          "tienePromocion": true,
+          "cliente": {
+            "identificacion": "DEMO-C01",
+            "nombre": "Cliente ficticio Ana",
+            "ciudad": "San Jos\u00E9",
+            "provincia": "San Jos\u00E9",
+            "categoria": "Frecuente"
+          },
+          "vendedor": {
+            "identificacion": "DEMO-E01",
+            "nombre": "Vendedora ficticia Alba",
+            "sucursal": "Central",
+            "region": "Valle Central"
+          },
+          "productos": [
+            {
+              "productoId": "P01",
+              "nombre": "Laptop",
+              "categoria": "Computaci\u00F3n",
+              "cantidad": 2,
+              "precioUnitario": 450000,
+              "porcentajeDescuento": 5,
+              "subtotal": 900000,
+              "descuento": 45000,
+              "ingresoNeto": 855000
+            },
+            {
+              "productoId": "P02",
+              "nombre": "Mouse",
+              "categoria": "Accesorios",
+              "cantidad": 3,
+              "precioUnitario": 12000,
+              "porcentajeDescuento": 0,
+              "subtotal": 36000,
+              "descuento": 0,
+              "ingresoNeto": 36000
+            }
+          ]
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Transacci\u00F3n individual",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/ventas?Pagina=2\u0026Tamano=5",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": [
+            {
+              "id": "DEMO-V006",
+              "fecha": "2026-07-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.00,
+              "total": 1179720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Lim\u00F3n",
+                "provincia": "Lim\u00F3n",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V007",
+              "fecha": "2026-08-02T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 486000,
+              "descuentoTotal": 22500,
+              "ingresoNeto": 463500,
+              "tasaImpuesto": 0.13,
+              "impuesto": 60255.00,
+              "total": 523755.00,
+              "canal": "Tienda",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 1,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 450000,
+                  "descuento": 22500,
+                  "ingresoNeto": 427500
+                },
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 3,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 36000,
+                  "descuento": 0,
+                  "ingresoNeto": 36000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V008",
+              "fecha": "2026-08-06T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "SINPE",
+              "moneda": "CRC",
+              "subtotal": 404000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 404000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 52520.00,
+              "total": 456520.00,
+              "canal": "Web",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C03",
+                "nombre": "Cliente ficticio Sof\u00EDa",
+                "ciudad": "Cartago",
+                "provincia": "Cartago",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E02",
+                "nombre": "Vendedor ficticio Bruno",
+                "sucursal": "Norte",
+                "region": "Guanacaste"
+              },
+              "productos": [
+                {
+                  "productoId": "P02",
+                  "nombre": "Mouse",
+                  "categoria": "Accesorios",
+                  "cantidad": 2,
+                  "precioUnitario": 12000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 24000,
+                  "descuento": 0,
+                  "ingresoNeto": 24000
+                },
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 4,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 380000,
+                  "descuento": 0,
+                  "ingresoNeto": 380000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V009",
+              "fecha": "2026-08-10T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 307000,
+              "descuentoTotal": 14250,
+              "ingresoNeto": 292750,
+              "tasaImpuesto": 0.13,
+              "impuesto": 38057.50,
+              "total": 330807.50,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": true,
+              "cliente": {
+                "identificacion": "DEMO-C04",
+                "nombre": "Cliente ficticio Diego",
+                "ciudad": "Heredia",
+                "provincia": "Heredia",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P03",
+                  "nombre": "Monitor",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 3,
+                  "precioUnitario": 95000,
+                  "porcentajeDescuento": 5,
+                  "subtotal": 285000,
+                  "descuento": 14250,
+                  "ingresoNeto": 270750
+                },
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V010",
+              "fecha": "2026-08-14T12:00:00Z",
+              "estado": "Completada",
+              "metodoPago": "Tarjeta",
+              "moneda": "CRC",
+              "subtotal": 92000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 92000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 11960.00,
+              "total": 103960.00,
+              "canal": "Tienda",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C05",
+                "nombre": "Cliente ficticio Elena",
+                "ciudad": "Liberia",
+                "provincia": "Guanacaste",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E01",
+                "nombre": "Vendedora ficticia Alba",
+                "sucursal": "Central",
+                "region": "Valle Central"
+              },
+              "productos": [
+                {
+                  "productoId": "P04",
+                  "nombre": "Teclado",
+                  "categoria": "Accesorios",
+                  "cantidad": 1,
+                  "precioUnitario": 22000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 22000,
+                  "descuento": 0,
+                  "ingresoNeto": 22000
+                },
+                {
+                  "productoId": "P05",
+                  "nombre": "Auriculares",
+                  "categoria": "Audio",
+                  "cantidad": 2,
+                  "precioUnitario": 35000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 70000,
+                  "descuento": 0,
+                  "ingresoNeto": 70000
+                }
+              ]
+            }
+          ],
+          "pagina": 2,
+          "tamano": 5,
+          "total": 18
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas seg\u00FAn filtros; incluye estados no completados",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": 12,
+          "facturacion": 4529322.50,
+          "ingresosNetos": 4008250,
+          "impuestos": 521072.50,
+          "ticketPromedio": 377443.54
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/estados",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "estado": "Cancelada",
+            "ventas": 3
+          },
+          {
+            "estado": "Completada",
+            "ventas": 12
+          },
+          {
+            "estado": "Pendiente",
+            "ventas": 3
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Todos los estados, salvo filtro Estado",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/productos",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P03",
+            "nombre": "Monitor",
+            "categoria": "Computaci\u00F3n",
+            "unidades": 17,
+            "ingresosNetos": 1572250
+          },
+          {
+            "productoId": "P02",
+            "nombre": "Mouse",
+            "categoria": "Accesorios",
+            "unidades": 13,
+            "ingresosNetos": 156000
+          },
+          {
+            "productoId": "P04",
+            "nombre": "Teclado",
+            "categoria": "Accesorios",
+            "unidades": 10,
+            "ingresosNetos": 220000
+          },
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          },
+          {
+            "productoId": "P01",
+            "nombre": "Laptop",
+            "categoria": "Computaci\u00F3n",
+            "unidades": 4,
+            "ingresosNetos": 1710000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "L\u00EDneas completadas; categor\u00EDa restringe l\u00EDneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/productos?ordenarPor=ingresos",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P01",
+            "nombre": "Laptop",
+            "categoria": "Computaci\u00F3n",
+            "unidades": 4,
+            "ingresosNetos": 1710000
+          },
+          {
+            "productoId": "P03",
+            "nombre": "Monitor",
+            "categoria": "Computaci\u00F3n",
+            "unidades": 17,
+            "ingresosNetos": 1572250
+          },
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          },
+          {
+            "productoId": "P04",
+            "nombre": "Teclado",
+            "categoria": "Accesorios",
+            "unidades": 10,
+            "ingresosNetos": 220000
+          },
+          {
+            "productoId": "P02",
+            "nombre": "Mouse",
+            "categoria": "Accesorios",
+            "unidades": 13,
+            "ingresosNetos": 156000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "L\u00EDneas completadas; categor\u00EDa restringe l\u00EDneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/categorias",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "categoria": "Computaci\u00F3n",
+            "unidades": 21,
+            "ingresosNetos": 3282250
+          },
+          {
+            "categoria": "Accesorios",
+            "unidades": 23,
+            "ingresosNetos": 376000
+          },
+          {
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "L\u00EDneas completadas; categor\u00EDa restringe l\u00EDneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/clientes",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "id": "DEMO-C03",
+            "nombre": "Cliente ficticio Sof\u00EDa",
+            "ventas": 3,
+            "facturacion": 1333682.50,
+            "ingresosNetos": 1180250
+          },
+          {
+            "id": "DEMO-C01",
+            "nombre": "Cliente ficticio Ana",
+            "ventas": 1,
+            "facturacion": 1006830.00,
+            "ingresosNetos": 891000
+          },
+          {
+            "id": "DEMO-C02",
+            "nombre": "Cliente ficticio Luis",
+            "ventas": 2,
+            "facturacion": 765575.00,
+            "ingresosNetos": 677500
+          },
+          {
+            "id": "DEMO-C04",
+            "nombre": "Cliente ficticio Diego",
+            "ventas": 3,
+            "facturacion": 755687.50,
+            "ingresosNetos": 668750
+          },
+          {
+            "id": "DEMO-C05",
+            "nombre": "Cliente ficticio Elena",
+            "ventas": 2,
+            "facturacion": 484487.50,
+            "ingresosNetos": 428750
+          },
+          {
+            "id": "DEMO-C06",
+            "nombre": "Cliente ficticio Pablo",
+            "ventas": 1,
+            "facturacion": 183060.00,
+            "ingresosNetos": 162000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/ciudades",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "id": "Cartago",
+            "nombre": "Cartago",
+            "ventas": 3,
+            "facturacion": 1333682.50,
+            "ingresosNetos": 1180250
+          },
+          {
+            "id": "San Jos\u00E9",
+            "nombre": "San Jos\u00E9",
+            "ventas": 1,
+            "facturacion": 1006830.00,
+            "ingresosNetos": 891000
+          },
+          {
+            "id": "Alajuela",
+            "nombre": "Alajuela",
+            "ventas": 2,
+            "facturacion": 765575.00,
+            "ingresosNetos": 677500
+          },
+          {
+            "id": "Heredia",
+            "nombre": "Heredia",
+            "ventas": 3,
+            "facturacion": 755687.50,
+            "ingresosNetos": 668750
+          },
+          {
+            "id": "Liberia",
+            "nombre": "Liberia",
+            "ventas": 2,
+            "facturacion": 484487.50,
+            "ingresosNetos": 428750
+          },
+          {
+            "id": "Lim\u00F3n",
+            "nombre": "Lim\u00F3n",
+            "ventas": 1,
+            "facturacion": 183060.00,
+            "ingresosNetos": 162000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/vendedores",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "id": "DEMO-E01",
+            "nombre": "Vendedora ficticia Alba",
+            "ventas": 6,
+            "facturacion": 2497300.00,
+            "ingresosNetos": 2210000
+          },
+          {
+            "id": "DEMO-E03",
+            "nombre": "Vendedora ficticia Celia",
+            "ventas": 3,
+            "facturacion": 1091862.50,
+            "ingresosNetos": 966250
+          },
+          {
+            "id": "DEMO-E02",
+            "nombre": "Vendedor ficticio Bruno",
+            "ventas": 3,
+            "facturacion": 940160.00,
+            "ingresosNetos": 832000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/canales",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "id": "Tienda",
+            "nombre": "Tienda",
+            "ventas": 6,
+            "facturacion": 2497300.00,
+            "ingresosNetos": 2210000
+          },
+          {
+            "id": "Tel\u00E9fono",
+            "nombre": "Tel\u00E9fono",
+            "ventas": 3,
+            "facturacion": 1091862.50,
+            "ingresosNetos": 966250
+          },
+          {
+            "id": "Web",
+            "nombre": "Web",
+            "ventas": 3,
+            "facturacion": 940160.00,
+            "ingresosNetos": 832000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/tendencias",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "anio": 2026,
+            "mes": 7,
+            "ventas": 4,
+            "facturacion": 1812237.50,
+            "ingresosNetos": 1603750
+          },
+          {
+            "anio": 2026,
+            "mes": 8,
+            "ventas": 4,
+            "facturacion": 1415042.50,
+            "ingresosNetos": 1252250
+          },
+          {
+            "anio": 2026,
+            "mes": 9,
+            "ventas": 4,
+            "facturacion": 1302042.50,
+            "ingresosNetos": 1152250
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/extremos",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "mayor": 1006830.00,
+          "menor": 103960.00
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/ciudades-distintas",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          "Alajuela",
+          "Cartago",
+          "Heredia",
+          "Liberia",
+          "Lim\u00F3n",
+          "San Jos\u00E9"
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Desde=2026-07-02\u0026Hasta=2026-07-02",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": 1,
+          "facturacion": 1006830.00,
+          "ingresosNetos": 891000,
+          "impuestos": 115830.00,
+          "ticketPromedio": 1006830.00
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Ciudad=San%20Jos%C3%A9",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": 1,
+          "facturacion": 1006830.00,
+          "ingresosNetos": 891000,
+          "impuestos": 115830.00,
+          "ticketPromedio": 1006830.00
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/productos?Categoria=Audio",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "categoria": "Audio",
+            "unidades": 10,
+            "ingresosNetos": 350000
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "L\u00EDneas completadas; categor\u00EDa restringe l\u00EDneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Moneda=USD",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": 1,
+          "facturacion": 1006830.00,
+          "ingresosNetos": 891000,
+          "impuestos": 115830.00,
+          "ticketPromedio": 1006830.00
+        },
+        "meta": {
+          "moneda": "USD",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/ventas?Estado=Cancelada",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": [
+            {
+              "id": "DEMO-V006",
+              "fecha": "2026-07-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.00,
+              "total": 1179720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C06",
+                "nombre": "Cliente ficticio Pablo",
+                "ciudad": "Lim\u00F3n",
+                "provincia": "Lim\u00F3n",
+                "categoria": "Corporativo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V012",
+              "fecha": "2026-08-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1944000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1944000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 252720.00,
+              "total": 2196720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C01",
+                "nombre": "Cliente ficticio Ana",
+                "ciudad": "San Jos\u00E9",
+                "provincia": "San Jos\u00E9",
+                "categoria": "Frecuente"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 4,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 1800000,
+                  "descuento": 0,
+                  "ingresoNeto": 1800000
+                }
+              ]
+            },
+            {
+              "id": "DEMO-V018",
+              "fecha": "2026-09-22T12:00:00Z",
+              "estado": "Cancelada",
+              "metodoPago": "Efectivo",
+              "moneda": "CRC",
+              "subtotal": 1044000,
+              "descuentoTotal": 0,
+              "ingresoNeto": 1044000,
+              "tasaImpuesto": 0.13,
+              "impuesto": 135720.00,
+              "total": 1179720.00,
+              "canal": "Tel\u00E9fono",
+              "tienePromocion": false,
+              "cliente": {
+                "identificacion": "DEMO-C02",
+                "nombre": "Cliente ficticio Luis",
+                "ciudad": "Alajuela",
+                "provincia": "Alajuela",
+                "categoria": "Nuevo"
+              },
+              "vendedor": {
+                "identificacion": "DEMO-E03",
+                "nombre": "Vendedora ficticia Celia",
+                "sucursal": "Caribe",
+                "region": "Caribe"
+              },
+              "productos": [
+                {
+                  "productoId": "P06",
+                  "nombre": "Parlante",
+                  "categoria": "Audio",
+                  "cantidad": 3,
+                  "precioUnitario": 48000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 144000,
+                  "descuento": 0,
+                  "ingresoNeto": 144000
+                },
+                {
+                  "productoId": "P01",
+                  "nombre": "Laptop",
+                  "categoria": "Computaci\u00F3n",
+                  "cantidad": 2,
+                  "precioUnitario": 450000,
+                  "porcentajeDescuento": 0,
+                  "subtotal": 900000,
+                  "descuento": 0,
+                  "ingresoNeto": 900000
+                }
+              ]
+            }
+          ],
+          "pagina": 1,
+          "tamano": 20,
+          "total": 3
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas seg\u00FAn filtros; incluye estados no completados",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Ciudad=Inexistente",
+      "codigo": 200,
+      "respuesta": {
+        "datos": {
+          "ventas": 0,
+          "facturacion": 0,
+          "ingresosNetos": 0,
+          "impuestos": 0,
+          "ticketPromedio": 0
+        },
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/productos?Desde=2020-01-01\u0026Hasta=2020-01-31",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "L\u00EDneas completadas; categor\u00EDa restringe l\u00EDneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/reportes/extremos?Ciudad=Inexistente",
+      "codigo": 200,
+      "respuesta": {
+        "datos": null,
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB local (prueba; no Atlas)",
+          "alcance": "Ventas completadas; categor\u00EDa selecciona transacciones completas",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      }
+    },
+    {
+      "ruta": "/api/ventas/no-existe",
+      "codigo": 404,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+        "title": "Venta no encontrada",
+        "status": 404
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Desde=mal",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Las fechas deben usar yyyy-MM-dd y un a\u00F1o entre 0001 y 9998.",
+        "traceId": "0HNPLDL99JOER"
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Desde=2026-09-01\u0026Hasta=2026-08-01",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Desde no puede ser posterior a Hasta.",
+        "traceId": "0HNPLDL99JOES"
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Estado=Cancelada",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Los indicadores financieros solo admiten Completada.",
+        "traceId": "0HNPLDL99JOET"
+      }
+    },
+    {
+      "ruta": "/api/reportes/resumen?Moneda=EUR",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Moneda debe ser CRC o USD.",
+        "traceId": "0HNPLDL99JOEU"
+      }
+    },
+    {
+      "ruta": "/api/reportes/productos?ordenarPor=rentabilidad",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "ordenarPor: unidades o ingresos.",
+        "traceId": "0HNPLDL99JOEV"
+      }
+    },
+    {
+      "ruta": "/api/ventas?Tamano=101",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Pagina: 1..100000; Tamano: 1..100.",
+        "traceId": "0HNPLDL99JOF0"
+      }
+    },
+    {
+      "ruta": "/api/ventas?Pagina=0",
+      "codigo": 400,
+      "respuesta": {
+        "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+        "title": "Solicitud inv\u00E1lida",
+        "status": 400,
+        "detail": "Pagina: 1..100000; Tamano: 1..100.",
+        "traceId": "0HNPLDL99JOF1"
+      }
+    },
+    {
+      "ruta": "/openapi/v1.json",
+      "codigo": 200,
+      "respuesta": {
+        "openapi": "3.1.1",
+        "info": {
+          "title": "Ventas.Api | v1",
+          "version": "1.0.0"
+        },
+        "servers": [
+          {
+            "url": "http://localhost/"
+          }
+        ],
+        "paths": {
+          "/health/live": {
+            "get": {
+              "tags": [
+                "Ventas.Api"
+              ],
+              "summary": "Proceso activo; no acredita conexi\u00F3n a MongoDB",
+              "responses": {
+                "200": {
+                  "description": "OK"
+                }
+              }
+            }
+          },
+          "/health/ready": {
+            "get": {
+              "tags": [
+                "Ventas.Api"
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK"
+                }
+              }
+            }
+          },
+          "/api/ventas": {
+            "get": {
+              "tags": [
+                "Ventas"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfPaginaDto"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Bad Request",
+                  "content": {
+                    "application/problem\u002Bjson": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ProblemDetails"
+                      }
+                    }
+                  }
+                },
+                "503": {
+                  "description": "Service Unavailable",
+                  "content": {
+                    "application/problem\u002Bjson": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ProblemDetails"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/ventas/{id}": {
+            "get": {
+              "tags": [
+                "Ventas"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfVenta"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Not Found",
+                  "content": {
+                    "application/problem\u002Bjson": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ProblemDetails"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/resumen": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "summary": "Facturaci\u00F3n con impuesto; ingreso neto sin impuesto; ticket con impuesto",
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfResumenDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/estados": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfEstadoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/productos": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                },
+                {
+                  "name": "ordenarPor",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfProductoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/categorias": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfCategoriaDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/clientes": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfGrupoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/ciudades": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfGrupoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/vendedores": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfGrupoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/canales": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfGrupoDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/tendencias": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfTendenciaDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/extremos": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfExtremosDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/reportes/ciudades-distintas": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfstring"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "CategoriaDto": {
+              "required": [
+                "categoria",
+                "unidades",
+                "ingresosNetos"
+              ],
+              "type": "object",
+              "properties": {
+                "categoria": {
+                  "type": "string"
+                },
+                "unidades": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "Cliente": {
+              "required": [
+                "identificacion",
+                "nombre",
+                "ciudad",
+                "provincia",
+                "categoria"
+              ],
+              "type": "object",
+              "properties": {
+                "identificacion": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "ciudad": {
+                  "type": "string"
+                },
+                "provincia": {
+                  "type": "string"
+                },
+                "categoria": {
+                  "type": "string"
+                }
+              }
+            },
+            "EstadoDto": {
+              "required": [
+                "estado",
+                "ventas"
+              ],
+              "type": "object",
+              "properties": {
+                "estado": {
+                  "type": "string"
+                },
+                "ventas": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                }
+              }
+            },
+            "ExtremosDto": {
+              "required": [
+                "mayor",
+                "menor"
+              ],
+              "type": "object",
+              "properties": {
+                "mayor": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "menor": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "GrupoDto": {
+              "required": [
+                "id",
+                "nombre",
+                "ventas",
+                "facturacion",
+                "ingresosNetos"
+              ],
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "ventas": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "facturacion": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "MetaDto": {
+              "required": [
+                "moneda",
+                "origen",
+                "alcance"
+              ],
+              "type": "object",
+              "properties": {
+                "moneda": {
+                  "type": "string"
+                },
+                "origen": {
+                  "type": "string"
+                },
+                "alcance": {
+                  "type": "string"
+                },
+                "periodo": {
+                  "type": "string",
+                  "default": "Fechas UTC; Desde y Hasta inclusivas"
+                }
+              }
+            },
+            "PaginaDto": {
+              "required": [
+                "ventas",
+                "pagina",
+                "tamano",
+                "total"
+              ],
+              "type": "object",
+              "properties": {
+                "ventas": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Venta"
+                  }
+                },
+                "pagina": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "tamano": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "total": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                }
+              }
+            },
+            "ProblemDetails": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "status": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "null",
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "detail": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "instance": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              }
+            },
+            "Producto": {
+              "required": [
+                "productoId",
+                "nombre",
+                "categoria"
+              ],
+              "type": "object",
+              "properties": {
+                "productoId": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "categoria": {
+                  "type": "string"
+                },
+                "cantidad": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "precioUnitario": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "porcentajeDescuento": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "subtotal": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "descuento": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ingresoNeto": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "ProductoDto": {
+              "required": [
+                "productoId",
+                "nombre",
+                "categoria",
+                "unidades",
+                "ingresosNetos"
+              ],
+              "type": "object",
+              "properties": {
+                "productoId": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "categoria": {
+                  "type": "string"
+                },
+                "unidades": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "RespuestaOfExtremosDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ExtremosDto"
+                    }
+                  ]
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfCategoriaDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriaDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfEstadoDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfGrupoDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/GrupoDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfProductoDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/ProductoDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfstring": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfTendenciaDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/TendenciaDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfPaginaDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/components/schemas/PaginaDto"
+                    }
+                  ]
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfResumenDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ResumenDto"
+                    }
+                  ]
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfVenta": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "oneOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Venta"
+                    }
+                  ]
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "ResumenDto": {
+              "required": [
+                "ventas",
+                "facturacion",
+                "ingresosNetos",
+                "impuestos",
+                "ticketPromedio"
+              ],
+              "type": "object",
+              "properties": {
+                "ventas": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "facturacion": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "impuestos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ticketPromedio": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "TendenciaDto": {
+              "required": [
+                "anio",
+                "mes",
+                "ventas",
+                "facturacion",
+                "ingresosNetos"
+              ],
+              "type": "object",
+              "properties": {
+                "anio": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "mes": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "ventas": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                },
+                "facturacion": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "Vendedor": {
+              "required": [
+                "identificacion",
+                "nombre",
+                "sucursal",
+                "region"
+              ],
+              "type": "object",
+              "properties": {
+                "identificacion": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "sucursal": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": "string"
+                }
+              }
+            },
+            "Venta": {
+              "required": [
+                "id",
+                "estado",
+                "metodoPago",
+                "moneda",
+                "canal",
+                "cliente",
+                "vendedor",
+                "productos"
+              ],
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "fecha": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "estado": {
+                  "type": "string"
+                },
+                "metodoPago": {
+                  "type": "string"
+                },
+                "moneda": {
+                  "type": "string"
+                },
+                "subtotal": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "descuentoTotal": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "ingresoNeto": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "tasaImpuesto": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "impuesto": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "total": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d\u002B)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "canal": {
+                  "type": "string"
+                },
+                "tienePromocion": {
+                  "type": "boolean"
+                },
+                "cliente": {
+                  "$ref": "#/components/schemas/Cliente"
+                },
+                "vendedor": {
+                  "$ref": "#/components/schemas/Vendedor"
+                },
+                "productos": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Producto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          {
+            "name": "Ventas.Api"
+          },
+          {
+            "name": "Ventas"
+          },
+          {
+            "name": "Reportes LINQ"
+          }
+        ]
+      }
+    }
+  ]
+}
