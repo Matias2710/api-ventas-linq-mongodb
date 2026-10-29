@@ -15,10 +15,10 @@ Repositorio: https://github.com/Matias2710/api-ventas-linq-mongodb
 | Indicadores | Los 12 indicadores originales, más estados, ciudades distintas y rentabilidad mediante margen bruto con costos ficticios explícitos. |
 | API REST | Minimal APIs, DTO, filtros, paginación, errores y OpenAPI. No usa controladores MVC. |
 | Pruebas | Última ejecución: 17 aprobadas, 0 fallidas, 0 omitidas. 36 solicitudes comparadas contra Atlas. Evidencia histórica adicional: 20 solicitudes HTTP locales. |
-| Informe | PDF en actualización con portada verificada, índice dinámico, referencias, resultados y capturas auténticas; pendiente revisión visual final. |
-| GitHub | Repositorio público existente y commit remoto comprobado. Pendiente publicar la ampliación de rentabilidad y el cierre documental. |
-| Entrega | Solo PDF con enlace GitHub; no ZIP ni código adjunto. Cierre: 29/10/2026 a las 18:00. Todavía no se ha enviado. |
-| Seguimiento | Este archivo mantiene el estado y las evidencias; no se declara entrega sin confirmación de Moodle. |
+| Informe | PDF definitivo de 23 páginas, 16 tablas y 4 figuras. Portada verificada, índice automático, referencias oficiales y capturas auténticas. Todas las páginas renderizadas e inspeccionadas; sin textos cortados ni páginas vacías. |
+| GitHub | Código y rentabilidad publicados; commit ca4d7b6cde4f5fa988dff8cbe0bab0236cc5311e coincide con remoto y con la referencia del PDF. Cierre documental posterior sin cambios de código. |
+| Entrega | PDF enviado el 29/10/2026 a las 06:05 (Costa Rica). Moodle confirmó «Enviado para calificar», 11 horas 54 minutos antes del cierre. El PDF descargado desde la entrega coincide por SHA-256 con el original. |
+| Seguimiento | Auditoría final completada contra el prompt original, las instrucciones posteriores y el enunciado oficial. No quedan requisitos esenciales pendientes ni bloqueos de entrega. |
 
 ## Hallazgos y correcciones
 
@@ -41,8 +41,13 @@ Repositorio: https://github.com/Matias2710/api-ventas-linq-mongodb
 - evidencias/atlas/verificacion.json: 36 solicitudes y comparaciones de la versión ampliada.
 - ../informe/atlas-documentos.png y api-resumen.png: capturas auténticas, fuera del repositorio público.
 
-## Pendiente inmediato
+## Cierre y verificación final
 
-1. Revisar todas las páginas del PDF final y sus referencias cruzadas.
-2. Publicar las modificaciones, comprobar remoto y registrar versión.
-3. Subir únicamente el PDF a la actividad y comprobar recepción.
+- Informe local: ../informe/Informe_API_Ventas_APA7.pdf (261 981 bytes; 23 páginas).
+- SHA-256 del PDF local y de la copia descargada desde Moodle: 31395EA206CF56A8DA22B67868FB130BD4A6DDE74B36342E37366B62BB2FF41D.
+- Comprobante auténtico local: ../informe/confirmacion-moodle.png. Se conserva fuera del repositorio por contener datos del campus.
+- Se recuperó la sesión de Moodle mediante inicio de sesión del usuario; después se adjuntó únicamente el PDF y se comprobó el estado final de recepción. No se eludieron controles del navegador.
+- Se preservaron los 18 documentos y los resultados de las pruebas aprobadas. La revisión final no modificó código ni volvió a ejecutar pruebas no afectadas.
+- Revisión de secretos antes de publicar: sin contraseñas, tokens ni URI privadas en archivos versionados; materiales del campus y portada fuera de Git.
+- Cobertura final: modelos completos, datos variados, carga idempotente, ejemplo monetario, todos los operadores LINQ, 12 indicadores, rentabilidad, filtros y errores, OpenAPI, Postman, pruebas reales, README reproducible, PDF APA 7, GitHub y recepción de Moodle verificados.
+- Límites documentados: datos y costos ficticios; margen bruto, no utilidad neta; API académica en loopback. Autenticación pública y pruebas de carga de producción quedan fuera del alcance solicitado. La evaluación del docente es posterior a la entrega.

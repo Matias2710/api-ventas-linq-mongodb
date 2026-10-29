@@ -137,7 +137,7 @@ Monitor lidera en unidades (17); Laptop lidera en ingresos netos (1 710 000). So
 - `scripts`: configuración segura y comprobaciones reproducibles.
 - `evidencias`: fixtures, respuestas reales locales y de Atlas, pipelines. Los `.trx` locales se excluyen de Git por contener rutas del equipo.
 - `docs/ATLAS.md`: conexión y diagnóstico.
-- `PROGRESO.md`: estado de entrega y requisitos por confirmar.
+- `PROGRESO.md`: auditoría de requisitos, evidencias y estado de entrega.
 
 La aplicación escucha en loopback y es una demostración académica. Antes de exponerla a Internet se requieren autenticación, autorización, HTTPS, límites de consumo y paginación adicional de reportes con grandes volúmenes. No contiene endpoints HTTP de carga o borrado.
 
