@@ -2,6 +2,10 @@ namespace Ventas.Api;
 
 public static class DatosDemo
 {
+    // Costos de adquisición ficticios, sin impuesto. No proceden de una empresa real.
+    public static decimal Costo(string id) => id switch { "P01" => 310000m, "P02" => 6500m,
+        "P03" => 62000m, "P04" => 12000m, "P05" => 18000m, "P06" => 28000m,
+        _ => throw new ArgumentException("Producto sin costo demo definido.") };
     public static List<Venta> Crear()
     {
         Cliente[] clientes = [
@@ -23,10 +27,10 @@ public static class DatosDemo
         {
             var a = catalogo[i % catalogo.Length]; var b = catalogo[(i + 1) % catalogo.Length];
             var lineas = new List<Producto> {
-                Calculos.Linea(a.Id, a.Nombre, a.Categoria, i % 3 + 1, a.Precio, i % 2 == 0 ? 5m : 0m),
-                Calculos.Linea(b.Id, b.Nombre, b.Categoria, i % 4 + 1, b.Precio, 0m) };
-            if (i == 0) lineas = [Calculos.Linea("P01", "Laptop", "Computación", 2, 450000m, 5m),
-                Calculos.Linea("P02", "Mouse", "Accesorios", 3, 12000m, 0m)];
+                Calculos.Linea(a.Id, a.Nombre, a.Categoria, i % 3 + 1, a.Precio, i % 2 == 0 ? 5m : 0m, Costo(a.Id)),
+                Calculos.Linea(b.Id, b.Nombre, b.Categoria, i % 4 + 1, b.Precio, 0m, Costo(b.Id)) };
+            if (i == 0) lineas = [Calculos.Linea("P01", "Laptop", "Computación", 2, 450000m, 5m, Costo("P01")),
+                Calculos.Linea("P02", "Mouse", "Accesorios", 3, 12000m, 0m, Costo("P02"))];
             var estado = i % 6 == 4 ? "Pendiente" : i % 6 == 5 ? "Cancelada" : "Completada";
             ventas.Add(Calculos.Crear($"DEMO-V{i + 1:000}", new DateTime(2026, 7 + i / 6, 2 + i % 6 * 4, 12, 0, 0, DateTimeKind.Utc),
                 estado, new[] { "Tarjeta", "SINPE", "Efectivo" }[i % 3], "CRC",

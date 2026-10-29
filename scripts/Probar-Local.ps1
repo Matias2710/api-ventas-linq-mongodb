@@ -18,7 +18,8 @@ try {
     if(-not $ready){throw 'MongoDB no está disponible.'}
     $env:VENTAS_TEST_URI="mongodb://127.0.0.1:$Port"
     $env:VENTAS_EVIDENCE_DIR=Join-Path $root 'evidencias'
-    dotnet test (Join-Path $root 'Ventas.sln') -c Release --logger 'trx;LogFileName=pruebas.trx' --results-directory (Join-Path $root 'evidencias')
+    # Aislar la compilación evita el bloqueo de apphost.exe si la API principal está ejecutándose.
+    dotnet test (Join-Path $root 'Ventas.sln') -c Release --artifacts-path (Join-Path $root '.local-test/artifacts') --logger 'trx;LogFileName=pruebas.trx' --results-directory (Join-Path $root 'evidencias')
     if($LASTEXITCODE -ne 0){throw 'Hay pruebas fallidas.'}
 }finally{
     $env:VENTAS_TEST_URI=$previousUri; $env:VENTAS_EVIDENCE_DIR=$previousEvidence

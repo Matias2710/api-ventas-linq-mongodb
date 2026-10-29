@@ -48,4 +48,21 @@ public sealed class MongoStore
         var result = await Ventas.BulkWriteAsync(writes, cancellationToken: ct);
         return result.Upserts.Count;
     }
+    public async Task<long> CompletarCostosDemo(CancellationToken ct)
+    {
+        // Migración acotada: solo añade costos ausentes de líneas demo que conservan su identidad e importes.
+        // No reemplaza documentos ni modifica precios, descuentos, impuestos o totales.
+        var writes = new List<WriteModel<Venta>>();
+        foreach (var v in DatosDemo.Crear()) for (var i = 0; i < v.Productos.Count; i++)
+        {
+            var p = v.Productos[i]; var path = $"Productos.{i}."; var f = Builders<Venta>.Filter;
+            var filter = f.Eq(x => x.Id, v.Id) & f.Eq(x => x.Total, v.Total) &
+                f.Eq(path + "ProductoId", p.ProductoId) & f.Eq(path + "Cantidad", p.Cantidad) &
+                f.Eq(path + "PrecioUnitario", p.PrecioUnitario) & f.Eq(path + "IngresoNeto", p.IngresoNeto) &
+                f.Exists(path + "CostoUnitario", false) & f.Exists(path + "CostoTotal", false);
+            writes.Add(new UpdateOneModel<Venta>(filter, Builders<Venta>.Update
+                .Set(path + "CostoUnitario", p.CostoUnitario).Set(path + "CostoTotal", p.CostoTotal)));
+        }
+        return (await Ventas.BulkWriteAsync(writes, cancellationToken: ct)).ModifiedCount;
+    }
 }

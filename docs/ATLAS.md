@@ -1,6 +1,6 @@
 # Conexión real con MongoDB Atlas
 
-Estado verificado: clúster Atlas Free con MongoDB 8.0.34, base `VentasAcademicas`, colección `Ventas` y 18 documentos. La primera carga insertó 18; repetirla insertó 0. Se verificaron 34 solicitudes HTTP contra Atlas y se compararon con resultados esperados. La configuración privada está en .NET User Secrets, no en este repositorio. El asistente de Atlas autorizó la IP actual del equipo; no se habilitó acceso universal. El usuario de base se creó mediante el asistente de la cuenta; para reutilizar o desplegar, limitar sus permisos a la base académica.
+Estado verificado: clúster Atlas Free con MongoDB 8.0.34, base `VentasAcademicas`, colección `Ventas` y 18 documentos. La primera carga insertó 18; repetirla insertó 0. Se verificaron 36 solicitudes HTTP contra Atlas y se compararon con resultados esperados. La configuración privada está en .NET User Secrets, no en este repositorio. El asistente de Atlas autorizó la IP actual del equipo; no se habilitó acceso universal. El usuario de base se creó mediante el asistente de la cuenta; para reutilizar o desplegar, limitar sus permisos a la base académica.
 
 1. Iniciar sesión en [Atlas](https://cloud.mongodb.com). Si no existe cuenta, completar personalmente su registro y condiciones.
 2. Crear un proyecto académico y seleccionar explícitamente el clúster **Free**. No seleccionar Flex ni Dedicated ni añadir facturación.

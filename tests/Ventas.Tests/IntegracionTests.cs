@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 using Ventas.Api;
 
 namespace Ventas.Tests;
@@ -42,6 +43,17 @@ public class IntegracionTests
         {
             Assert.Equal(18, await store.Sembrar(default)); Assert.Equal(0, await store.Sembrar(default));
             Assert.Equal(18, await store.Ventas.CountDocumentsAsync(FilterDefinition<Venta>.Empty));
+            await store.Ventas.UpdateOneAsync(v => v.Id == "DEMO-V001", Builders<Venta>.Update
+                .Unset("Productos.0.CostoUnitario").Unset("Productos.0.CostoTotal"));
+            Assert.Equal(1, await store.CompletarCostosDemo(default));
+            Assert.Equal(0, await store.CompletarCostosDemo(default));
+            var reference = DatosDemo.Crear()[0];
+            var zero = Calculos.Crear("TEST-ZERO", reference.Fecha, "Completada", "Tarjeta", "CRC", "Web",
+                reference.Cliente, reference.Vendedor, [Calculos.Linea("PZERO", "Prueba cero", "Prueba", 1, 100m, 100m, 40m)]);
+            await store.Ventas.InsertOneAsync(zero);
+            var zeroMargin = await Consultas.Rentabilidad(store.Ventas.AsQueryable().Where(v => v.Id == "TEST-ZERO"), null).SingleAsync();
+            Assert.Equal(-40m, zeroMargin.MargenBruto); Assert.Null(zeroMargin.MargenPorcentaje);
+            await store.Ventas.DeleteOneAsync(v => v.Id == "TEST-ZERO");
             // Centinela USD para demostrar que los importes nunca se mezclan entre monedas.
             await store.Ventas.InsertOneAsync(DatosDemo.Crear()[0] with { Id = "TEST-USD", Moneda = "USD" });
             async Task<JsonElement> Get(string path, HttpStatusCode status = HttpStatusCode.OK)
@@ -77,6 +89,17 @@ public class IntegracionTests
                 Assert.Equal(units, p.Unidades); Assert.Equal(revenue, p.IngresosNetos);
             }
             Assert.Equal(summary.IngresosNetos, products.Sum(p => p.IngresosNetos));
+            var margins = await Data<List<RentabilidadDto>>("/api/reportes/rentabilidad");
+            foreach (var p in margins)
+            {
+                var lines = completed.SelectMany(v => v.Productos).Where(l => l.ProductoId == p.ProductoId);
+                var cost = lines.Sum(l => l.CostoTotal ?? 0m); var revenue = lines.Sum(l => l.IngresoNeto);
+                Assert.Equal(cost, p.Costos); Assert.Equal(revenue - cost, p.MargenBruto);
+                Assert.Equal(Math.Round((revenue - cost) / revenue * 100, 2), p.MargenPorcentaje);
+            }
+            Assert.Equal("P03", margins[0].ProductoId);
+            Assert.Equal(1329750m, margins.Sum(p => p.MargenBruto));
+            Assert.All(await Data<List<RentabilidadDto>>("/api/reportes/rentabilidad?Categoria=Audio"), p => Assert.Equal("P05", p.ProductoId));
             var byRevenue = await Data<List<ProductoDto>>("/api/reportes/productos?ordenarPor=ingresos");
             Assert.Equal(products.Max(p => p.IngresosNetos), byRevenue[0].IngresosNetos);
             var categories = await Data<List<CategoriaDto>>("/api/reportes/categorias");
@@ -120,7 +143,7 @@ public class IntegracionTests
             foreach (var path in new[] { "/health/live", "/health/ready", "/api/ventas", "/api/ventas/{id}",
                 "/api/reportes/resumen", "/api/reportes/estados", "/api/reportes/productos", "/api/reportes/categorias",
                 "/api/reportes/clientes", "/api/reportes/ciudades", "/api/reportes/vendedores", "/api/reportes/canales",
-                "/api/reportes/tendencias", "/api/reportes/extremos", "/api/reportes/ciudades-distintas" })
+                "/api/reportes/tendencias", "/api/reportes/extremos", "/api/reportes/ciudades-distintas", "/api/reportes/rentabilidad" })
                 Assert.True(spec.GetProperty("paths").TryGetProperty(path, out _), "Ruta OpenAPI faltante: " + path);
             var pipelines = store.Pipelines.ToArray();
             Assert.NotEmpty(pipelines);

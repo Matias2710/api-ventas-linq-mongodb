@@ -4,6 +4,15 @@ namespace Ventas.Tests;
 
 public class NegocioTests
 {
+    [Fact] public void Costos_ficticios_no_alteran_facturacion_y_ausencia_no_equivale_a_cero()
+    {
+        var v = DatosDemo.Crear()[0];
+        Assert.Equal(639500m, v.Productos.Sum(p => p.CostoTotal));
+        Assert.Equal(251500m, v.IngresoNeto - v.Productos.Sum(p => p.CostoTotal));
+        Assert.Equal(1006830m, v.Total);
+        Assert.Null(Calculos.Linea("P", "Prueba", "Prueba", 1, 100m, 0).CostoTotal);
+        Assert.Throws<ArgumentException>(() => Calculos.Linea("P", "Prueba", "Prueba", 1, 100m, 0, -1m));
+    }
     [Fact] public void Ejemplo_del_enunciado_conserva_importes_exactos()
     {
         var v = DatosDemo.Crear()[0];

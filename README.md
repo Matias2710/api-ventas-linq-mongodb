@@ -6,10 +6,10 @@ API académica en español que analiza ventas ficticias de una tienda de tecnolo
 
 - .NET SDK 10.0.301; MongoDB.Driver 3.13.0; ASP.NET Core OpenAPI 10.0.14.
 - 18 documentos en `Ventas`, 12 completados, 3 pendientes y 3 cancelados.
-- 16 pruebas automatizadas aprobadas, sin omisiones, contra MongoDB Community 8.0.34 local.
-- 20 solicitudes HTTP locales y 34 solicitudes contra **MongoDB Atlas Free 8.0.34**, comparadas con resultados esperados.
+- 17 pruebas automatizadas aprobadas, sin omisiones, contra MongoDB Community 8.0.34 local.
+- 20 solicitudes HTTP locales y 36 solicitudes contra **MongoDB Atlas Free 8.0.34**, comparadas con resultados esperados.
 - Carga real en Atlas: primera ejecución 18 inserciones, segunda 0; total 18.
-- Moodle: actividad, rúbrica, plantilla, política de IA y entrega aún no verificadas. El proyecto sigue el enunciado facilitado por el usuario.
+- Moodle: enunciado y reglas revisados el 29 de octubre de 2026. Se exige PDF APA con índice y enlace GitHub; no se entrega código comprimido. No hay rúbrica separada ni versión concreta del SDK en los materiales revisados. La confirmación de entrega se registra en PROGRESO.md.
 
 ## Compilar y probar
 
@@ -49,7 +49,7 @@ Abrir `http://127.0.0.1:5088/openapi/v1.json` en Development o importar esa URL 
 python scripts/verificar_atlas.py --url http://127.0.0.1:5088
 ```
 
-El segundo comando compara 34 respuestas con el oráculo de integración local. El caso USD local utiliza un centinela temporal y espera cero ventas USD en la base demo de Atlas. Estas comprobaciones numéricas presuponen la colección demo intacta; una base con más datos legítimos requiere otros valores esperados.
+El segundo comando compara 36 respuestas con el oráculo de integración local. El caso USD local utiliza un centinela temporal y espera cero ventas USD en la base demo de Atlas. Estas comprobaciones numéricas presuponen la colección demo intacta; una base con más datos legítimos requiere otros valores esperados.
 
 ## Modelo y reglas de cálculo
 
@@ -64,7 +64,7 @@ Cada línea conserva cantidad, precio unitario, porcentaje de descuento, subtota
 - Facturación = ingreso neto + impuesto. Se suman solo ventas completadas.
 - Ticket promedio = promedio de totales con impuesto, redondeado a dos decimales por `$round` en MongoDB (empates al par).
 
-El 13 % es un **supuesto didáctico del enunciado**, pendiente de contrastar con el material docente. No representa asesoría fiscal. No se calcula utilidad o rentabilidad porque no existen costos. CRC y USD nunca se suman entre sí ni se convierten automáticamente.
+El 13 % es un **supuesto didáctico coincidente con el ejemplo docente verificado**. No representa asesoría fiscal. El reporte de rentabilidad utiliza costos de adquisición ficticios explícitos: margen bruto = ingreso neto sin impuesto − costo total; margen porcentual = margen bruto / ingreso neto × 100. No equivale a utilidad neta. Un costo ausente no se interpreta como cero: la línea se excluye de ese reporte y el metadato explica el alcance. Con ingreso cero el porcentaje es null. CRC y USD nunca se suman entre sí ni se convierten automáticamente.
 
 La venta de referencia contiene 2 laptops de CRC 450 000 con 5 % de descuento y 3 mouse de CRC 12 000: subtotal 936 000; descuento 45 000; neto 891 000; impuesto 115 830; total **1 006 830**.
 
@@ -81,6 +81,7 @@ Todos son GET. Éxito: `{ "datos": ..., "meta": { "moneda", "origen", "alcance",
 | `/api/reportes/resumen` | Facturación, ingresos, impuestos, ticket y cantidad |
 | `/api/reportes/estados` | Cantidad por estado, incluidos pendiente y cancelado |
 | `/api/reportes/productos` | Unidades e ingresos por producto |
+| `/api/reportes/rentabilidad` | Margen bruto estimado por producto, ordenado de mayor a menor |
 | `/api/reportes/categorias` | Unidades e ingresos por categoría |
 | `/api/reportes/clientes` | Facturación y frecuencia por cliente |
 | `/api/reportes/ciudades` | Ventas e importes por ciudad |
@@ -147,4 +148,14 @@ La aplicación escucha en loopback y es una demostración académica. Antes de e
 - [MongoDB: LINQ y agregación](https://www.mongodb.com/docs/drivers/csharp/current/aggregation/linq/).
 - [MongoDB: conexión a Atlas](https://www.mongodb.com/docs/atlas/connect-to-database-deployment/).
 
-El informe académico se entrega por separado para no publicar datos de portada ni documentos del campus. Se utilizó asistencia de IA en desarrollo y documentación; la compatibilidad con la política del curso sigue pendiente de revisión.
+El informe académico se entrega por separado para no publicar datos de portada ni documentos del campus. Se utilizó asistencia de IA en desarrollo y documentación; los materiales revisados no contienen una prohibición específica de IA; una actividad docente de LINQ enlaza expresamente pasos de IA. El informe declara esta asistencia sin atribuirla al estudiante como trabajo sin apoyo.
+
+## Costos ficticios y migración compatible
+
+Para satisfacer la mención de productos rentables del enunciado, se añadieron `CostoUnitario` y `CostoTotal` a las líneas. Costos sin impuesto (CRC): Laptop 310 000; Mouse 6 500; Monitor 62 000; Teclado 12 000; Auriculares 18 000; Parlante 28 000. Son supuestos sintéticos, no costos obtenidos del docente ni del mercado.
+
+El margen bruto agregado verificado es CRC 1 329 750. Monitor lidera el margen absoluto (518 250); Auriculares presenta el mayor porcentaje (48,57 %). El cálculo se ejecuta con LINQ en MongoDB. No incluye gastos operativos ni permite afirmar utilidad neta.
+
+Las bases creadas con la primera versión pueden ejecutar `dotnet run --project src/Ventas.Api --no-launch-profile -- --costos-demo`. La migración solo completa campos ausentes en las 36 líneas demo que conservan su identidad e importes; no reemplaza documentos ni altera ventas, descuentos, impuestos o totales. En Atlas actualizó 36 líneas; repetirla actualizó 0. La carga inicial de una base nueva ya incluye costos.
+
+Se priorizó el enunciado vigente de la asignación sobre las referencias históricas a Visual Basic y SQL Server del acuerdo general. No se identificó un proyecto base obligatorio ni una plantilla institucional adicional en los recursos pertinentes revisados.

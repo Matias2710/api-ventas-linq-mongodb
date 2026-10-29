@@ -8,11 +8,16 @@ builder.Services.AddSingleton<MongoStore>();
 builder.Services.AddOpenApi();
 builder.Services.AddProblemDetails();
 var app = builder.Build();
-if (args.Contains("--seed"))
+if (args.Contains("--seed") || args.Contains("--costos-demo"))
 {
     try
     {
         var store = app.Services.GetRequiredService<MongoStore>();
+        if (args.Contains("--costos-demo"))
+        {
+            Console.WriteLine($"Costos demo: {await store.CompletarCostosDemo(CancellationToken.None)} líneas actualizadas. Origen: {store.Origen}.");
+            return;
+        }
         var nuevos = await store.Sembrar(CancellationToken.None);
         Console.WriteLine($"Carga verificada. Origen: {store.Origen}. Nuevos: {nuevos}. Total: {await store.Ventas.CountDocumentsAsync(FilterDefinition<Venta>.Empty)}.");
     }
@@ -78,6 +83,10 @@ reportes.MapGet("/canales", async ([AsParameters] Filtro f, MongoStore s, Cancel
 reportes.MapGet("/tendencias", async ([AsParameters] Filtro f, MongoStore s, CancellationToken ct) => Results.Ok(Env(await Consultas.Tendencias(Q(f, s)).ToListAsync(ct), f, s))).Produces<Respuesta<List<TendenciaDto>>>();
 reportes.MapGet("/extremos", async ([AsParameters] Filtro f, MongoStore s, CancellationToken ct) => Results.Ok(Env(await Consultas.Extremos(Q(f, s)).FirstOrDefaultAsync(ct), f, s))).Produces<Respuesta<ExtremosDto?>>();
 reportes.MapGet("/ciudades-distintas", async ([AsParameters] Filtro f, MongoStore s, CancellationToken ct) => Results.Ok(Env(await Consultas.CiudadesDistintas(Q(f, s)).ToListAsync(ct), f, s))).Produces<Respuesta<List<string>>>();
+reportes.MapGet("/rentabilidad", async ([AsParameters] Filtro f, MongoStore s, CancellationToken ct) =>
+    Results.Ok(Env(await Consultas.Rentabilidad(Q(f, s), f.Categoria).ToListAsync(ct), f, s,
+        "Margen bruto estimado con costos ficticios; solo líneas con costo informado; no utilidad neta")))
+    .Produces<Respuesta<List<RentabilidadDto>>>();
 app.Run();
 static IQueryable<Venta> Q(Filtro f, MongoStore s) { f.Validar(); return Consultas.Filtrar(s.Ventas.AsQueryable(), f); }
 static Respuesta<T> Env<T>(T datos, Filtro f, MongoStore s, string alcance = "Ventas completadas; categoría selecciona transacciones completas") =>

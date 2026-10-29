@@ -1,5 +1,5 @@
 {
-  "ejecutadoUtc": "2026-10-29T03:41:21.950652+00:00",
+  "ejecutadoUtc": "2026-10-29T11:30:37.698106+00:00",
   "origen": "MongoDB Atlas",
   "resultado": "Todos los contratos y resultados comparados correctamente",
   "solicitudes": [
@@ -63,7 +63,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 900000,
                   "descuento": 45000,
-                  "ingresoNeto": 855000
+                  "ingresoNeto": 855000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 },
                 {
                   "productoId": "P02",
@@ -74,7 +76,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 36000,
                   "descuento": 0,
-                  "ingresoNeto": 36000
+                  "ingresoNeto": 36000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 19500
                 }
               ]
             },
@@ -115,7 +119,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 24000,
                   "descuento": 0,
-                  "ingresoNeto": 24000
+                  "ingresoNeto": 24000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 13000
                 },
                 {
                   "productoId": "P03",
@@ -126,7 +132,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 190000,
                   "descuento": 0,
-                  "ingresoNeto": 190000
+                  "ingresoNeto": 190000,
+                  "costoUnitario": 62000,
+                  "costoTotal": 124000
                 }
               ]
             },
@@ -167,7 +175,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 285000,
                   "descuento": 14250,
-                  "ingresoNeto": 270750
+                  "ingresoNeto": 270750,
+                  "costoUnitario": 62000,
+                  "costoTotal": 186000
                 },
                 {
                   "productoId": "P04",
@@ -178,7 +188,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 66000,
                   "descuento": 0,
-                  "ingresoNeto": 66000
+                  "ingresoNeto": 66000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 36000
                 }
               ]
             },
@@ -219,7 +231,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 },
                 {
                   "productoId": "P05",
@@ -230,7 +244,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 140000,
                   "descuento": 0,
-                  "ingresoNeto": 140000
+                  "ingresoNeto": 140000,
+                  "costoUnitario": 18000,
+                  "costoTotal": 72000
                 }
               ]
             },
@@ -271,7 +287,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 70000,
                   "descuento": 3500,
-                  "ingresoNeto": 66500
+                  "ingresoNeto": 66500,
+                  "costoUnitario": 18000,
+                  "costoTotal": 36000
                 },
                 {
                   "productoId": "P06",
@@ -282,7 +300,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 48000,
                   "descuento": 0,
-                  "ingresoNeto": 48000
+                  "ingresoNeto": 48000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 28000
                 }
               ]
             },
@@ -323,7 +343,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -334,7 +356,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 900000,
                   "descuento": 0,
-                  "ingresoNeto": 900000
+                  "ingresoNeto": 900000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 }
               ]
             },
@@ -375,7 +399,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 450000,
                   "descuento": 22500,
-                  "ingresoNeto": 427500
+                  "ingresoNeto": 427500,
+                  "costoUnitario": 310000,
+                  "costoTotal": 310000
                 },
                 {
                   "productoId": "P02",
@@ -386,7 +412,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 36000,
                   "descuento": 0,
-                  "ingresoNeto": 36000
+                  "ingresoNeto": 36000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 19500
                 }
               ]
             },
@@ -427,7 +455,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 24000,
                   "descuento": 0,
-                  "ingresoNeto": 24000
+                  "ingresoNeto": 24000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 13000
                 },
                 {
                   "productoId": "P03",
@@ -438,7 +468,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 380000,
                   "descuento": 0,
-                  "ingresoNeto": 380000
+                  "ingresoNeto": 380000,
+                  "costoUnitario": 62000,
+                  "costoTotal": 248000
                 }
               ]
             },
@@ -479,7 +511,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 285000,
                   "descuento": 14250,
-                  "ingresoNeto": 270750
+                  "ingresoNeto": 270750,
+                  "costoUnitario": 62000,
+                  "costoTotal": 186000
                 },
                 {
                   "productoId": "P04",
@@ -490,7 +524,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 }
               ]
             },
@@ -531,7 +567,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 },
                 {
                   "productoId": "P05",
@@ -542,7 +580,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 70000,
                   "descuento": 0,
-                  "ingresoNeto": 70000
+                  "ingresoNeto": 70000,
+                  "costoUnitario": 18000,
+                  "costoTotal": 36000
                 }
               ]
             },
@@ -583,7 +623,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 70000,
                   "descuento": 3500,
-                  "ingresoNeto": 66500
+                  "ingresoNeto": 66500,
+                  "costoUnitario": 18000,
+                  "costoTotal": 36000
                 },
                 {
                   "productoId": "P06",
@@ -594,7 +636,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 }
               ]
             },
@@ -635,7 +679,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -646,7 +692,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 1800000,
                   "descuento": 0,
-                  "ingresoNeto": 1800000
+                  "ingresoNeto": 1800000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 1240000
                 }
               ]
             },
@@ -687,7 +735,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 450000,
                   "descuento": 22500,
-                  "ingresoNeto": 427500
+                  "ingresoNeto": 427500,
+                  "costoUnitario": 310000,
+                  "costoTotal": 310000
                 },
                 {
                   "productoId": "P02",
@@ -698,7 +748,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 12000,
                   "descuento": 0,
-                  "ingresoNeto": 12000
+                  "ingresoNeto": 12000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 6500
                 }
               ]
             },
@@ -739,7 +791,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 24000,
                   "descuento": 0,
-                  "ingresoNeto": 24000
+                  "ingresoNeto": 24000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 13000
                 },
                 {
                   "productoId": "P03",
@@ -750,7 +804,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 190000,
                   "descuento": 0,
-                  "ingresoNeto": 190000
+                  "ingresoNeto": 190000,
+                  "costoUnitario": 62000,
+                  "costoTotal": 124000
                 }
               ]
             },
@@ -791,7 +847,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 285000,
                   "descuento": 14250,
-                  "ingresoNeto": 270750
+                  "ingresoNeto": 270750,
+                  "costoUnitario": 62000,
+                  "costoTotal": 186000
                 },
                 {
                   "productoId": "P04",
@@ -802,7 +860,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 66000,
                   "descuento": 0,
-                  "ingresoNeto": 66000
+                  "ingresoNeto": 66000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 36000
                 }
               ]
             },
@@ -843,7 +903,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 },
                 {
                   "productoId": "P05",
@@ -854,7 +916,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 140000,
                   "descuento": 0,
-                  "ingresoNeto": 140000
+                  "ingresoNeto": 140000,
+                  "costoUnitario": 18000,
+                  "costoTotal": 72000
                 }
               ]
             },
@@ -895,7 +959,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 70000,
                   "descuento": 3500,
-                  "ingresoNeto": 66500
+                  "ingresoNeto": 66500,
+                  "costoUnitario": 18000,
+                  "costoTotal": 36000
                 },
                 {
                   "productoId": "P06",
@@ -906,7 +972,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 48000,
                   "descuento": 0,
-                  "ingresoNeto": 48000
+                  "ingresoNeto": 48000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 28000
                 }
               ]
             },
@@ -947,7 +1015,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -958,7 +1028,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 900000,
                   "descuento": 0,
-                  "ingresoNeto": 900000
+                  "ingresoNeto": 900000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 }
               ]
             }
@@ -1017,7 +1089,9 @@
               "porcentajeDescuento": 5,
               "subtotal": 900000,
               "descuento": 45000,
-              "ingresoNeto": 855000
+              "ingresoNeto": 855000,
+              "costoUnitario": 310000,
+              "costoTotal": 620000
             },
             {
               "productoId": "P02",
@@ -1028,7 +1102,9 @@
               "porcentajeDescuento": 0,
               "subtotal": 36000,
               "descuento": 0,
-              "ingresoNeto": 36000
+              "ingresoNeto": 36000,
+              "costoUnitario": 6500,
+              "costoTotal": 19500
             }
           ]
         },
@@ -1084,7 +1160,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -1095,7 +1173,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 900000,
                   "descuento": 0,
-                  "ingresoNeto": 900000
+                  "ingresoNeto": 900000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 }
               ]
             },
@@ -1136,7 +1216,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 450000,
                   "descuento": 22500,
-                  "ingresoNeto": 427500
+                  "ingresoNeto": 427500,
+                  "costoUnitario": 310000,
+                  "costoTotal": 310000
                 },
                 {
                   "productoId": "P02",
@@ -1147,7 +1229,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 36000,
                   "descuento": 0,
-                  "ingresoNeto": 36000
+                  "ingresoNeto": 36000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 19500
                 }
               ]
             },
@@ -1188,7 +1272,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 24000,
                   "descuento": 0,
-                  "ingresoNeto": 24000
+                  "ingresoNeto": 24000,
+                  "costoUnitario": 6500,
+                  "costoTotal": 13000
                 },
                 {
                   "productoId": "P03",
@@ -1199,7 +1285,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 380000,
                   "descuento": 0,
-                  "ingresoNeto": 380000
+                  "ingresoNeto": 380000,
+                  "costoUnitario": 62000,
+                  "costoTotal": 248000
                 }
               ]
             },
@@ -1240,7 +1328,9 @@
                   "porcentajeDescuento": 5,
                   "subtotal": 285000,
                   "descuento": 14250,
-                  "ingresoNeto": 270750
+                  "ingresoNeto": 270750,
+                  "costoUnitario": 62000,
+                  "costoTotal": 186000
                 },
                 {
                   "productoId": "P04",
@@ -1251,7 +1341,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 }
               ]
             },
@@ -1292,7 +1384,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 22000,
                   "descuento": 0,
-                  "ingresoNeto": 22000
+                  "ingresoNeto": 22000,
+                  "costoUnitario": 12000,
+                  "costoTotal": 12000
                 },
                 {
                   "productoId": "P05",
@@ -1303,7 +1397,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 70000,
                   "descuento": 0,
-                  "ingresoNeto": 70000
+                  "ingresoNeto": 70000,
+                  "costoUnitario": 18000,
+                  "costoTotal": 36000
                 }
               ]
             }
@@ -1413,6 +1509,84 @@
           "moneda": "CRC",
           "origen": "MongoDB Atlas",
           "alcance": "Líneas completadas; categoría restringe líneas; ingresos sin impuesto",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      },
+      "coincide": true
+    },
+    {
+      "ruta": "/api/reportes/rentabilidad",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P03",
+            "nombre": "Monitor",
+            "ingresosNetos": 1572250,
+            "costos": 1054000,
+            "margenBruto": 518250,
+            "margenPorcentaje": 32.96
+          },
+          {
+            "productoId": "P01",
+            "nombre": "Laptop",
+            "ingresosNetos": 1710000,
+            "costos": 1240000,
+            "margenBruto": 470000,
+            "margenPorcentaje": 27.49
+          },
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "ingresosNetos": 350000,
+            "costos": 180000,
+            "margenBruto": 170000,
+            "margenPorcentaje": 48.57
+          },
+          {
+            "productoId": "P04",
+            "nombre": "Teclado",
+            "ingresosNetos": 220000,
+            "costos": 120000,
+            "margenBruto": 100000,
+            "margenPorcentaje": 45.45
+          },
+          {
+            "productoId": "P02",
+            "nombre": "Mouse",
+            "ingresosNetos": 156000,
+            "costos": 84500,
+            "margenBruto": 71500,
+            "margenPorcentaje": 45.83
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB Atlas",
+          "alcance": "Margen bruto estimado con costos ficticios; solo líneas con costo informado; no utilidad neta",
+          "periodo": "Fechas UTC; Desde y Hasta inclusivas"
+        }
+      },
+      "coincide": true
+    },
+    {
+      "ruta": "/api/reportes/rentabilidad?Categoria=Audio",
+      "codigo": 200,
+      "respuesta": {
+        "datos": [
+          {
+            "productoId": "P05",
+            "nombre": "Auriculares",
+            "ingresosNetos": 350000,
+            "costos": 180000,
+            "margenBruto": 170000,
+            "margenPorcentaje": 48.57
+          }
+        ],
+        "meta": {
+          "moneda": "CRC",
+          "origen": "MongoDB Atlas",
+          "alcance": "Margen bruto estimado con costos ficticios; solo líneas con costo informado; no utilidad neta",
           "periodo": "Fechas UTC; Desde y Hasta inclusivas"
         }
       },
@@ -1883,7 +2057,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -1894,7 +2070,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 900000,
                   "descuento": 0,
-                  "ingresoNeto": 900000
+                  "ingresoNeto": 900000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 }
               ]
             },
@@ -1935,7 +2113,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -1946,7 +2126,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 1800000,
                   "descuento": 0,
-                  "ingresoNeto": 1800000
+                  "ingresoNeto": 1800000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 1240000
                 }
               ]
             },
@@ -1987,7 +2169,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 144000,
                   "descuento": 0,
-                  "ingresoNeto": 144000
+                  "ingresoNeto": 144000,
+                  "costoUnitario": 28000,
+                  "costoTotal": 84000
                 },
                 {
                   "productoId": "P01",
@@ -1998,7 +2182,9 @@
                   "porcentajeDescuento": 0,
                   "subtotal": 900000,
                   "descuento": 0,
-                  "ingresoNeto": 900000
+                  "ingresoNeto": 900000,
+                  "costoUnitario": 310000,
+                  "costoTotal": 620000
                 }
               ]
             }
@@ -2082,7 +2268,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Las fechas deben usar yyyy-MM-dd y un año entre 0001 y 9998.",
-        "traceId": "00-c60c6bdfbc9e69092ddbbb376b567238-71b738bf53832630-00"
+        "traceId": "00-82acb8185e39240ba4eb81d1774ccff8-1c2d771f421bd195-00"
       },
       "coincide": true
     },
@@ -2094,7 +2280,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Desde no puede ser posterior a Hasta.",
-        "traceId": "00-40ef42e0e1dae57571e03ec2fb131380-1bfb2a58ff0543a7-00"
+        "traceId": "00-60438e28b76baa04cd2449521c612aa6-918c695857731dc0-00"
       },
       "coincide": true
     },
@@ -2106,7 +2292,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Los indicadores financieros solo admiten Completada.",
-        "traceId": "00-b01e82bfbe9bd4198e956a4ed0631a96-6be6b4a7042b1828-00"
+        "traceId": "00-c18f8fbfa342e1834439b1c19a28bb82-45479e9869076b27-00"
       },
       "coincide": true
     },
@@ -2118,7 +2304,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Moneda debe ser CRC o USD.",
-        "traceId": "00-c2c8748d989a68997f533f463a3220a9-d2157897aabb0d1c-00"
+        "traceId": "00-d62e0124c9e7eb9fa2f9dd49c83c7bf2-4c15bb5ba3a664ee-00"
       },
       "coincide": true
     },
@@ -2130,7 +2316,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "ordenarPor: unidades o ingresos.",
-        "traceId": "00-0bb571ee8cd56a54ca364a4e28b71e47-29862bdab72dce2d-00"
+        "traceId": "00-b7e8817c7bfaba16f4dbb610cd1a1bd1-853324ff2eca5bcf-00"
       },
       "coincide": true
     },
@@ -2142,7 +2328,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Pagina: 1..100000; Tamano: 1..100.",
-        "traceId": "00-482a02aadfb63ba5f38f67f6e83d2a9c-fd4c12339a411b99-00"
+        "traceId": "00-ad7676284779330d81e9f8413773c7b0-23fc8d7257731b43-00"
       },
       "coincide": true
     },
@@ -2154,7 +2340,7 @@
         "title": "Solicitud inválida",
         "status": 400,
         "detail": "Pagina: 1..100000; Tamano: 1..100.",
-        "traceId": "00-5deffe5b524ef2cab6c25f490ba508f3-082834fd899ca23f-00"
+        "traceId": "00-44952ae560cd0859e4a9c2b5e10bf217-3baf1abd99b5fa8d-00"
       },
       "coincide": true
     },
@@ -3344,6 +3530,96 @@
                 }
               }
             }
+          },
+          "/api/reportes/rentabilidad": {
+            "get": {
+              "tags": [
+                "Reportes LINQ"
+              ],
+              "parameters": [
+                {
+                  "name": "Desde",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Hasta",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Ciudad",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Categoria",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Moneda",
+                  "in": "query",
+                  "schema": {
+                    "type": "string",
+                    "default": "CRC"
+                  }
+                },
+                {
+                  "name": "Estado",
+                  "in": "query",
+                  "schema": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "name": "Pagina",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 1
+                  }
+                },
+                {
+                  "name": "Tamano",
+                  "in": "query",
+                  "schema": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32",
+                    "default": 20
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/RespuestaOfListOfRentabilidadDto"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "components": {
@@ -3657,6 +3933,24 @@
                     "string"
                   ],
                   "format": "double"
+                },
+                "costoUnitario": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "null",
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "costoTotal": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "null",
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
                 }
               }
             },
@@ -3690,6 +3984,58 @@
                 "ingresosNetos": {
                   "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
                   "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                }
+              }
+            },
+            "RentabilidadDto": {
+              "required": [
+                "productoId",
+                "nombre",
+                "ingresosNetos",
+                "costos",
+                "margenBruto",
+                "margenPorcentaje"
+              ],
+              "type": "object",
+              "properties": {
+                "productoId": {
+                  "type": "string"
+                },
+                "nombre": {
+                  "type": "string"
+                },
+                "ingresosNetos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "costos": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "margenBruto": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "number",
+                    "string"
+                  ],
+                  "format": "double"
+                },
+                "margenPorcentaje": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                  "type": [
+                    "null",
                     "number",
                     "string"
                   ],
@@ -3796,6 +4142,27 @@
                   ],
                   "items": {
                     "$ref": "#/components/schemas/ProductoDto"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/MetaDto"
+                }
+              }
+            },
+            "RespuestaOfListOfRentabilidadDto": {
+              "required": [
+                "datos",
+                "meta"
+              ],
+              "type": "object",
+              "properties": {
+                "datos": {
+                  "type": [
+                    "null",
+                    "array"
+                  ],
+                  "items": {
+                    "$ref": "#/components/schemas/RentabilidadDto"
                   }
                 },
                 "meta": {
@@ -4152,5 +4519,5 @@
       "coincide": true
     }
   ],
-  "correctas": 34
+  "correctas": 36
 }

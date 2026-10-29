@@ -36,7 +36,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 900000,
         "descuento": 45000,
-        "ingresoNeto": 855000
+        "ingresoNeto": 855000,
+        "costoUnitario": 310000,
+        "costoTotal": 620000
       },
       {
         "productoId": "P02",
@@ -47,7 +49,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 36000,
         "descuento": 0,
-        "ingresoNeto": 36000
+        "ingresoNeto": 36000,
+        "costoUnitario": 6500,
+        "costoTotal": 19500
       }
     ]
   },
@@ -88,7 +92,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 24000,
         "descuento": 0,
-        "ingresoNeto": 24000
+        "ingresoNeto": 24000,
+        "costoUnitario": 6500,
+        "costoTotal": 13000
       },
       {
         "productoId": "P03",
@@ -99,7 +105,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 190000,
         "descuento": 0,
-        "ingresoNeto": 190000
+        "ingresoNeto": 190000,
+        "costoUnitario": 62000,
+        "costoTotal": 124000
       }
     ]
   },
@@ -140,7 +148,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 285000,
         "descuento": 14250,
-        "ingresoNeto": 270750
+        "ingresoNeto": 270750,
+        "costoUnitario": 62000,
+        "costoTotal": 186000
       },
       {
         "productoId": "P04",
@@ -151,7 +161,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 66000,
         "descuento": 0,
-        "ingresoNeto": 66000
+        "ingresoNeto": 66000,
+        "costoUnitario": 12000,
+        "costoTotal": 36000
       }
     ]
   },
@@ -192,7 +204,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 22000,
         "descuento": 0,
-        "ingresoNeto": 22000
+        "ingresoNeto": 22000,
+        "costoUnitario": 12000,
+        "costoTotal": 12000
       },
       {
         "productoId": "P05",
@@ -203,7 +217,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 140000,
         "descuento": 0,
-        "ingresoNeto": 140000
+        "ingresoNeto": 140000,
+        "costoUnitario": 18000,
+        "costoTotal": 72000
       }
     ]
   },
@@ -244,7 +260,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 70000,
         "descuento": 3500,
-        "ingresoNeto": 66500
+        "ingresoNeto": 66500,
+        "costoUnitario": 18000,
+        "costoTotal": 36000
       },
       {
         "productoId": "P06",
@@ -255,7 +273,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 48000,
         "descuento": 0,
-        "ingresoNeto": 48000
+        "ingresoNeto": 48000,
+        "costoUnitario": 28000,
+        "costoTotal": 28000
       }
     ]
   },
@@ -296,7 +316,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 144000,
         "descuento": 0,
-        "ingresoNeto": 144000
+        "ingresoNeto": 144000,
+        "costoUnitario": 28000,
+        "costoTotal": 84000
       },
       {
         "productoId": "P01",
@@ -307,7 +329,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 900000,
         "descuento": 0,
-        "ingresoNeto": 900000
+        "ingresoNeto": 900000,
+        "costoUnitario": 310000,
+        "costoTotal": 620000
       }
     ]
   },
@@ -348,7 +372,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 450000,
         "descuento": 22500,
-        "ingresoNeto": 427500
+        "ingresoNeto": 427500,
+        "costoUnitario": 310000,
+        "costoTotal": 310000
       },
       {
         "productoId": "P02",
@@ -359,7 +385,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 36000,
         "descuento": 0,
-        "ingresoNeto": 36000
+        "ingresoNeto": 36000,
+        "costoUnitario": 6500,
+        "costoTotal": 19500
       }
     ]
   },
@@ -400,7 +428,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 24000,
         "descuento": 0,
-        "ingresoNeto": 24000
+        "ingresoNeto": 24000,
+        "costoUnitario": 6500,
+        "costoTotal": 13000
       },
       {
         "productoId": "P03",
@@ -411,7 +441,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 380000,
         "descuento": 0,
-        "ingresoNeto": 380000
+        "ingresoNeto": 380000,
+        "costoUnitario": 62000,
+        "costoTotal": 248000
       }
     ]
   },
@@ -452,7 +484,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 285000,
         "descuento": 14250,
-        "ingresoNeto": 270750
+        "ingresoNeto": 270750,
+        "costoUnitario": 62000,
+        "costoTotal": 186000
       },
       {
         "productoId": "P04",
@@ -463,7 +497,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 22000,
         "descuento": 0,
-        "ingresoNeto": 22000
+        "ingresoNeto": 22000,
+        "costoUnitario": 12000,
+        "costoTotal": 12000
       }
     ]
   },
@@ -504,7 +540,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 22000,
         "descuento": 0,
-        "ingresoNeto": 22000
+        "ingresoNeto": 22000,
+        "costoUnitario": 12000,
+        "costoTotal": 12000
       },
       {
         "productoId": "P05",
@@ -515,7 +553,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 70000,
         "descuento": 0,
-        "ingresoNeto": 70000
+        "ingresoNeto": 70000,
+        "costoUnitario": 18000,
+        "costoTotal": 36000
       }
     ]
   },
@@ -556,7 +596,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 70000,
         "descuento": 3500,
-        "ingresoNeto": 66500
+        "ingresoNeto": 66500,
+        "costoUnitario": 18000,
+        "costoTotal": 36000
       },
       {
         "productoId": "P06",
@@ -567,7 +609,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 144000,
         "descuento": 0,
-        "ingresoNeto": 144000
+        "ingresoNeto": 144000,
+        "costoUnitario": 28000,
+        "costoTotal": 84000
       }
     ]
   },
@@ -608,7 +652,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 144000,
         "descuento": 0,
-        "ingresoNeto": 144000
+        "ingresoNeto": 144000,
+        "costoUnitario": 28000,
+        "costoTotal": 84000
       },
       {
         "productoId": "P01",
@@ -619,7 +665,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 1800000,
         "descuento": 0,
-        "ingresoNeto": 1800000
+        "ingresoNeto": 1800000,
+        "costoUnitario": 310000,
+        "costoTotal": 1240000
       }
     ]
   },
@@ -660,7 +708,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 450000,
         "descuento": 22500,
-        "ingresoNeto": 427500
+        "ingresoNeto": 427500,
+        "costoUnitario": 310000,
+        "costoTotal": 310000
       },
       {
         "productoId": "P02",
@@ -671,7 +721,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 12000,
         "descuento": 0,
-        "ingresoNeto": 12000
+        "ingresoNeto": 12000,
+        "costoUnitario": 6500,
+        "costoTotal": 6500
       }
     ]
   },
@@ -712,7 +764,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 24000,
         "descuento": 0,
-        "ingresoNeto": 24000
+        "ingresoNeto": 24000,
+        "costoUnitario": 6500,
+        "costoTotal": 13000
       },
       {
         "productoId": "P03",
@@ -723,7 +777,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 190000,
         "descuento": 0,
-        "ingresoNeto": 190000
+        "ingresoNeto": 190000,
+        "costoUnitario": 62000,
+        "costoTotal": 124000
       }
     ]
   },
@@ -764,7 +820,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 285000,
         "descuento": 14250,
-        "ingresoNeto": 270750
+        "ingresoNeto": 270750,
+        "costoUnitario": 62000,
+        "costoTotal": 186000
       },
       {
         "productoId": "P04",
@@ -775,7 +833,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 66000,
         "descuento": 0,
-        "ingresoNeto": 66000
+        "ingresoNeto": 66000,
+        "costoUnitario": 12000,
+        "costoTotal": 36000
       }
     ]
   },
@@ -816,7 +876,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 22000,
         "descuento": 0,
-        "ingresoNeto": 22000
+        "ingresoNeto": 22000,
+        "costoUnitario": 12000,
+        "costoTotal": 12000
       },
       {
         "productoId": "P05",
@@ -827,7 +889,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 140000,
         "descuento": 0,
-        "ingresoNeto": 140000
+        "ingresoNeto": 140000,
+        "costoUnitario": 18000,
+        "costoTotal": 72000
       }
     ]
   },
@@ -868,7 +932,9 @@
         "porcentajeDescuento": 5,
         "subtotal": 70000,
         "descuento": 3500,
-        "ingresoNeto": 66500
+        "ingresoNeto": 66500,
+        "costoUnitario": 18000,
+        "costoTotal": 36000
       },
       {
         "productoId": "P06",
@@ -879,7 +945,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 48000,
         "descuento": 0,
-        "ingresoNeto": 48000
+        "ingresoNeto": 48000,
+        "costoUnitario": 28000,
+        "costoTotal": 28000
       }
     ]
   },
@@ -920,7 +988,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 144000,
         "descuento": 0,
-        "ingresoNeto": 144000
+        "ingresoNeto": 144000,
+        "costoUnitario": 28000,
+        "costoTotal": 84000
       },
       {
         "productoId": "P01",
@@ -931,7 +1001,9 @@
         "porcentajeDescuento": 0,
         "subtotal": 900000,
         "descuento": 0,
-        "ingresoNeto": 900000
+        "ingresoNeto": 900000,
+        "costoUnitario": 310000,
+        "costoTotal": 620000
       }
     ]
   }

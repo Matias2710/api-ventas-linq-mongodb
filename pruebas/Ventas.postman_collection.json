@@ -180,6 +180,48 @@
       ]
     },
     {
+      "name": "/api/reportes/rentabilidad",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/rentabilidad"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "/api/reportes/rentabilidad?Categoria=Audio",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/reportes/rentabilidad?Categoria=Audio"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Respuesta JSON', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('json'));",
+              "const body = pm.response.json();",
+              "pm.test('Contrato de datos', () => { pm.expect(body).to.have.property('datos'); pm.expect(body.meta).to.have.property('origen'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "/api/reportes/productos?ordenarPor=ingresos",
       "request": {
         "method": "GET",

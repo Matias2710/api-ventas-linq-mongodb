@@ -29,6 +29,8 @@ public sealed record ResumenDto(int Ventas, decimal Facturacion, decimal Ingreso
 public sealed record EstadoDto(string Estado, int Ventas);
 public sealed record ProductoDto(string ProductoId, string Nombre, string Categoria, int Unidades, decimal IngresosNetos);
 public sealed record CategoriaDto(string Categoria, int Unidades, decimal IngresosNetos);
+public sealed record RentabilidadDto(string ProductoId, string Nombre, decimal IngresosNetos,
+    decimal Costos, decimal MargenBruto, decimal? MargenPorcentaje);
 public sealed record GrupoDto(string Id, string Nombre, int Ventas, decimal Facturacion, decimal IngresosNetos);
 public sealed record TendenciaDto(int Anio, int Mes, int Ventas, decimal Facturacion, decimal IngresosNetos);
 public sealed record ExtremosDto(decimal Mayor, decimal Menor);
@@ -84,4 +86,12 @@ public static class Consultas
     public static IQueryable<ExtremosDto> Extremos(IQueryable<Venta> q) => q.GroupBy(v => 1)
         .Select(g => new ExtremosDto(g.Max(v => v.Total), g.Min(v => v.Total)));
     public static IQueryable<string> CiudadesDistintas(IQueryable<Venta> q) => q.Select(v => v.Cliente.Ciudad).Distinct().OrderBy(x => x);
+    public static IQueryable<RentabilidadDto> Rentabilidad(IQueryable<Venta> q, string? categoria) => Lineas(q, categoria)
+        .Where(p => p.CostoTotal != null)
+        .GroupBy(p => new { p.ProductoId, p.Nombre })
+        .Select(g => new RentabilidadDto(g.Key.ProductoId, g.Key.Nombre, g.Sum(p => p.IngresoNeto),
+            g.Sum(p => p.CostoTotal ?? 0m), g.Sum(p => p.IngresoNeto) - g.Sum(p => p.CostoTotal ?? 0m),
+            g.Sum(p => p.IngresoNeto) == 0m ? null : Math.Round(
+                (g.Sum(p => p.IngresoNeto) - g.Sum(p => p.CostoTotal ?? 0m)) / g.Sum(p => p.IngresoNeto) * 100m, 2)))
+        .OrderByDescending(p => p.MargenBruto).ThenBy(p => p.ProductoId);
 }
